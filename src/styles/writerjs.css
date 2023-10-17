@@ -1,0 +1,160 @@
+.wrapper--greeting {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(../assets/home/projects/writerjs.gif);
+  background-size: cover;
+  background-position: center 20%;
+  display: table;
+}
+.wrapper--greeting .content {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#greeting {
+  font-size: 100px;
+  display: block;
+  color: white;
+  line-height: 100px;
+  font-family: "Bebas Neue", cursive;
+  mix-blend-mode: difference;
+}
+.wrapper--about {
+  width: 100%;
+  background: #f2f2f2;
+}
+.wrapper--about .content {
+  display: table;
+}
+#about__overview {
+  width: 50%;
+  display: table-cell;
+  padding-right: 10%;
+  vertical-align: top;
+}
+#about__demo {
+  width: 50%;
+  text-align: right;
+  display: table-cell;
+  padding-left: 30px;
+  vertical-align: top;
+}
+#overview-1,
+#demo-1,
+#specs-1,
+#compat-1 {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#overview-2 {
+  font-size: 16px;
+  color: #444444;
+}
+#overview-2 a,
+#compat-2 a {
+  font-weight: bold;
+}
+#href--github {
+  display: table;
+  background: #262626;
+  margin-top: 30px;
+  padding: 8px 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#href--github:hover {
+  background: #444444;
+}
+#demo-2 {
+  background: white;
+  padding: 30px 60px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  float: right;
+}
+#demo-3 {
+  font-family: "Jost";
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.wrapper--features {
+  width: 100%;
+  background: #f2f2f2;
+}
+.wrapper--features .content {
+  display: table;
+}
+#features__compat {
+  width: 50%;
+  display: table-cell;
+  padding-right: 30px;
+  vertical-align: top;
+}
+#features__specs {
+  width: 50%;
+  display: table-cell;
+  padding-left: 30px;
+  vertical-align: top;
+}
+#compat-3 {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+}
+.compat__browser {
+  display: table-cell;
+  text-align: center;
+  padding: 10px 0;
+}
+#specs-2 {
+  color: #444444;
+}
+#specs-2 li {
+  margin-bottom: 10px;
+}
+#specs-3 {
+  margin-top: 20px;
+}
+#specs-4 {
+  background: #f2f4ff;
+  font-family: "Courier Prime";
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#specs-4 i {
+  font-weight: bold;
+  color: #000080;
+}
+#specs-4 a {
+  color: #808080;
+}
+#specs-4 b {
+  color: #ff0000;
+  font-weight: normal;
+}
+@media only screen and (max-width: 992px) {
+  #greeting {
+    font-size: 80px;
+  }
+  #about__overview,
+  #features__compat {
+    width: 100%;
+    display: table-row;
+  }
+  #about__demo,
+  #features__specs {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+    text-align: left;
+  }
+  #demo-2 {
+    float: left;
+  }
+}

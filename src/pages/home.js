@@ -95,7 +95,7 @@ function Home() {
                     className="button--light project__button"
                     id="href--motordebate"
                   >
-                    <Link>View Project</Link>
+                    <Link to="motordebate">View Project</Link>
                   </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ function Home() {
                     className="button--light project__button"
                     id="href--writerjs"
                   >
-                    View Project
+                    <Link to="writerjs">View Project</Link>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function Home() {
                     className="button--light project__button"
                     id="href--nftescrow"
                   >
-                    View Project
+                    <Link to="nftescrow">View Project</Link>
                   </div>
                 </div>
               </div>
