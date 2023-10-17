@@ -1,16 +1,16 @@
-import BackButton from "../components/BackButton";
+import Banner from "../components/Banner";
 
 import "../styles/writerjs.css";
+
+import bannerBackground from "../assets/home/projects/writerjs.gif";
 
 function WriterJS() {
   return (
     <div id="homePage">
-      <div class="wrapper--greeting">
-        <div class="content">
-          <BackButton />
-          <span id="greeting"> WRITER JS </span>
-        </div>
-      </div>
+      <Banner 
+        text="WRITER JS"
+        background={bannerBackground}
+      />
       <div class="wrapper--about">
         <div class="content">
           <div id="about__overview">

@@ -1,4 +1,4 @@
-import BackButton from "../components/BackButton";
+import Banner from "../components/Banner.js";
 
 import "../styles/motordebate.css";
 
@@ -9,15 +9,15 @@ import tile_2b from "../assets/motordebate/tile-2b.png";
 import tile_3a from "../assets/motordebate/tile-3a.png";
 import tile_3b from "../assets/motordebate/tile-3b.png";
 
+import bannerBackground from "../assets/home/projects/motordebate.gif";
+
 function MotorDebate() {
   return (
     <div id="homePage">
-      <div className="wrapper--greeting">
-        <div className="content">
-          <BackButton />
-          <span id="greeting"> MOTORDEBATE </span>
-        </div>
-      </div>
+      <Banner 
+        text="MOTORDEBATE"
+        background={bannerBackground}
+      />
       <div className="wrapper--about">
         <div className="content">
           <div id="about__overview">

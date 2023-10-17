@@ -1,19 +1,19 @@
-import BackButton from "../components/BackButton";
+import Banner from "../components/Banner";
 
 import "../styles/nftescrow.css";
 
 import tx1 from "../assets/nftescrow/tx1.png";
 import tx2 from "../assets/nftescrow/tx2.png";
 
+import bannerBackground from "../assets/home/projects/nftescrow.gif";
+
 function NFTEscrow() {
   return (
     <div id="homePage">
-      <div class="wrapper--greeting">
-        <div class="content">
-          <BackButton />
-          <span id="greeting"> NFT Escrow </span>
-        </div>
-      </div>
+<Banner 
+        text="NFT ESCROW"
+        background={bannerBackground}
+      />
       <div class="wrapper--about">
         <div class="content">
           <div id="about__overview">
