@@ -1,4 +1,4 @@
-import "../styles/banner.css";
+import "../styles/Banner.css";
 
 import BackButton from "./BackButton";
 
