@@ -8,11 +8,11 @@
   background: none;
 }
 
-.BackButton>.BackButton__Icon {
+.BackButton > .BackButton__Icon {
   display: inline-block;
   transition: transform 0.2s;
 }
 
-.BackButton:hover>.BackButton__Icon {
+.BackButton:hover > .BackButton__Icon {
   transform: translateX(-3px);
 }

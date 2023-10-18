@@ -1,23 +1,17 @@
-import Banner from "../components/Banner.js";
-
-import "../styles/motordebate.css";
-
+import bannerBackground from "../assets/home/projects/motordebate.gif";
 import tile_1a from "../assets/motordebate/tile-1a.png";
 import tile_1b from "../assets/motordebate/tile-1b.png";
 import tile_2a from "../assets/motordebate/tile-2a.png";
 import tile_2b from "../assets/motordebate/tile-2b.png";
 import tile_3a from "../assets/motordebate/tile-3a.png";
 import tile_3b from "../assets/motordebate/tile-3b.png";
-
-import bannerBackground from "../assets/home/projects/motordebate.gif";
+import Banner from "../components/Banner.js";
+import "../styles/motordebate.css";
 
 function MotorDebate() {
   return (
     <div id="homePage">
-      <Banner 
-        text="MOTORDEBATE"
-        background={bannerBackground}
-      />
+      <Banner text="MOTORDEBATE" background={bannerBackground} />
       <div className="wrapper--about">
         <div className="content">
           <div id="about__overview">
@@ -116,9 +110,10 @@ function MotorDebate() {
               first instance of using OOP principles in PHP which I found
               necessary to keep the blog's back-end structure organized.
               <br /> <br />
-              Using classNamees allowed the framework to take a much more organized
-              and accessible form. This also supports scalability. Implementing
-              new features and updating existing ones would require little work.
+              Using classNamees allowed the framework to take a much more
+              organized and accessible form. This also supports scalability.
+              Implementing new features and updating existing ones would require
+              little work.
               <br /> <br />
               <div className="backend-3">
                 <b>className</b> UserActionHandler {"{"}

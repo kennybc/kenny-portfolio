@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-
-import Home from "./pages/home.js";
-import MotorDebate from "./pages/motordebate.js";
-import WriterJS from "./pages/writerjs.js";
-import NFTEscrow from "./pages/nftescrow.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./index.css";
+import Home from "./pages/home.js";
+import MotorDebate from "./pages/motordebate.js";
+import NFTEscrow from "./pages/nftescrow.js";
+import WriterJS from "./pages/writerjs.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,5 +17,5 @@ root.render(
       <Route path="writerjs" element={<WriterJS />} />
       <Route path="nftescrow" element={<NFTEscrow />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
 );

@@ -1,5 +1,4 @@
 import "../styles/Banner.css";
-
 import BackButton from "./BackButton";
 
 export default function Banner({ text, background }) {

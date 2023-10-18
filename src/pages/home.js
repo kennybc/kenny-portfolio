@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
-import "../styles/home.css";
-
 import motordebate from "../assets/home/projects/motordebate.png";
-import writerjs from "../assets/home/projects/writerjs.png";
 import nftescrow from "../assets/home/projects/nftescrow.png";
+import writerjs from "../assets/home/projects/writerjs.png";
+import "../styles/home.css";
 
 function Home() {
   return (
