@@ -1,6 +1,7 @@
 import motordebate from "assets/home/projects/motordebate.png";
 import nftescrow from "assets/home/projects/nftescrow.png";
 import writerjs from "assets/home/projects/writerjs.png";
+import Block from "components/Block/Block";
 
 import { Link } from "react-router-dom";
 
@@ -8,75 +9,67 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div id="homePage">
-      <div className="wrapper--greeting">
-        <div className="content">
-          <div id="greeting__text">
-            <span id="greeting-1"> Hi, I'm Kenny. </span>
-            <span id="greeting-2">
-              <a>+</a> I'm a freelance software engineer.{" "}
-            </span>
-          </div>
-          <img
-            id="greeting__chars"
-            src="img/characters.svg"
-            draggable="false"
-          />
+    <div class="Home">
+      <Block className="greeting Block--Large">
+        <div id="greeting__text">
+          <span id="greeting-1"> Hi, I'm Kenny. </span>
+          <span id="greeting-2">
+            <a>+</a> Student and software engineer.{" "}
+          </span>
         </div>
-      </div>
-      <div className="wrapper--about">
-        <div className="content">
-          <div id="about__skills">
-            <span id="skills-1" className="title">
-              Skill Levels
+        <img id="greeting__chars" src="img/characters.svg" draggable="false" />
+      </Block>
+      <Block className="about Block--Medium">
+        <div id="about__skills">
+          <span id="skills-1" className="title">
+            Skill Levels
+          </span>
+          <span id="skills-2">
+            <span data-level="proficient">
+              <a>+</a> Java
             </span>
-            <span id="skills-2">
-              <span data-level="proficient">
-                <a>+</a> Java
-              </span>
-              <span data-level="proficient">
-                <a>+</a> HTML/CSS/JS
-              </span>
-              <span data-level="proficient">
-                <a>+</a> PHP/SQL
-              </span>
-              <span data-level="proficient">
-                <a>+</a> Python
-              </span>
-              <span data-level="intermediate">
-                <a>+</a> C/C++
-              </span>
-              <span data-level="intermediate">
-                <a>+</a> Node.js
-              </span>
-              <span data-level="intermediate">
-                <a>+</a> PS/Inkscape
-              </span>
-              <span data-level="learning">
-                <a>+</a> Solidity
-              </span>
+            <span data-level="proficient">
+              <a>+</a> HTML/CSS/JS
             </span>
-          </div>
-          <div id="about__text">
-            <span id="about-1" className="title">
-              About Myself
+            <span data-level="proficient">
+              <a>+</a> PHP/SQL
             </span>
-            <span id="about-2">
-              I'm a 2nd year undergraduate student at Northeastern University
-              pursuing a degree in computer science with a concentration in
-              software. I've been working with programming languages since 2nd
-              grade and have had a passion for programming and mathematical
-              concepts ever since. I also enjoy learning about everything
-              technology; I've completed several PC builds and have an interest
-              in cybersecurity and AI.
-              <br /> <br />I have also dabbled in the arts--including but not
-              limited to graphic design, studio arts, clarinet/saxophone/piano,
-              origami. In my free time, I enjoy weight lifting, cooking,
-              volleyball, reading/drawing, and (recently) running.
+            <span data-level="proficient">
+              <a>+</a> Python
             </span>
-          </div>
+            <span data-level="intermediate">
+              <a>+</a> C/C++
+            </span>
+            <span data-level="intermediate">
+              <a>+</a> Node.js
+            </span>
+            <span data-level="intermediate">
+              <a>+</a> PS/Inkscape
+            </span>
+            <span data-level="learning">
+              <a>+</a> Solidity
+            </span>
+          </span>
         </div>
-      </div>
+        <div id="about__text">
+          <span id="about-1" className="title">
+            About Myself
+          </span>
+          <span id="about-2">
+            I'm a 2nd year undergraduate student at Northeastern University
+            pursuing a degree in computer science with a concentration in
+            software. I've been working with programming languages since 2nd
+            grade and have had a passion for programming and mathematical
+            concepts ever since. I also enjoy learning about everything
+            technology; I've completed several PC builds and have an interest in
+            cybersecurity and AI.
+            <br /> <br />I have also dabbled in the arts--including but not
+            limited to graphic design, studio arts, clarinet/saxophone/piano,
+            origami. In my free time, I enjoy weight lifting, cooking,
+            volleyball, reading/drawing, and (recently) running.
+          </span>
+        </div>
+      </Block>
       <div className="wrapper--projects">
         <div className="content">
           <span id="projects-1" className="title">

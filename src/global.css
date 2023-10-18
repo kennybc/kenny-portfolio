@@ -48,21 +48,6 @@ body {
 .button--light:hover {
   background: white;
 }
-.back {
-  display: table;
-  margin-bottom: 10px;
-  color: white;
-  mix-blend-mode: difference;
-  cursor: pointer;
-  font-size: 17px;
-}
-.back a {
-  display: inline-block;
-  transition: transform 0.2s;
-}
-.back:hover a {
-  transform: translateX(-3px);
-}
 @media only screen and (max-width: 1400px) {
   .content {
     padding: 50px 150px;

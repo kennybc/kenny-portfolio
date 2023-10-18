@@ -1,0 +1,40 @@
+.Block {
+  width: 100%;
+  display: table;
+  position: relative;
+}
+.Block--Small > .Block__Content {
+  padding: 20px 4px;
+}
+.Block--Medium > .Block__Content {
+  padding: 50px 10px;
+}
+.Block--Large > .Block__Content {
+  padding: 100px 20px;
+}
+.Block--Full > .Block__Content {
+  max-width: 100% !important;
+}
+.Block__Content {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+}
+@media only screen and (max-width: 1400px) {
+  .Block__Content {
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .Block__Content {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .Block__Content {
+    max-width: 720px;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}
