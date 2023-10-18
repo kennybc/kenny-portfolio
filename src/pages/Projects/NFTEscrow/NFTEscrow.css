@@ -1,0 +1,159 @@
+.wrapper--greeting {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(assets/home/projects/nftescrow.gif);
+  background-size: cover;
+  background-position: center 20%;
+  display: table;
+}
+.wrapper--greeting .content {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#greeting {
+  font-size: 100px;
+  display: block;
+  color: white;
+  line-height: 100px;
+  font-family: "Bebas Neue", cursive;
+  mix-blend-mode: difference;
+}
+.wrapper--about {
+  width: 100%;
+  background: #f2f2f2;
+}
+.wrapper--about .content {
+  display: table;
+}
+#about__overview {
+  width: 50%;
+  display: table-cell;
+  padding-right: 10%;
+  vertical-align: top;
+}
+#about__apps {
+  width: 50%;
+  text-align: right;
+  display: table-cell;
+  padding-left: 30px;
+  vertical-align: top;
+}
+#overview-1,
+#apps-1,
+#discontinue-1,
+#escrow-1 {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#overview-2 {
+  font-size: 16px;
+  color: #444444;
+}
+#overview-2 a,
+#escrow-2 a {
+  font-weight: bold;
+}
+#apps-2 {
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  float: right;
+}
+.apps__app {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+.apps__app:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(
+    to bottom left,
+    transparent 0%,
+    transparent 50%,
+    #f2f2f2 50%,
+    #f2f2f2 100%
+  );
+  content: "";
+}
+.wrapper--features {
+  width: 100%;
+  background: #f2f2f2;
+}
+.wrapper--features .content {
+  display: table;
+}
+#features__escrow {
+  width: 50%;
+  display: table-cell;
+  padding-right: 30px;
+  vertical-align: top;
+}
+#features__discontinue {
+  width: 50%;
+  display: table-cell;
+  padding-left: 30px;
+  vertical-align: top;
+}
+#escrow-2 img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#discontinue-2 {
+  color: #444444;
+}
+#discontinue-2 li {
+  margin-bottom: 10px;
+}
+#discontinue-3 {
+  margin-top: 20px;
+}
+#discontinue-4 {
+  background: #f2f4ff;
+  font-family: "Courier Prime";
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#discontinue-4 i {
+  font-weight: bold;
+  color: #000080;
+}
+#discontinue-4 a {
+  color: #808080;
+}
+#discontinue-4 b {
+  color: #ff0000;
+  font-weight: normal;
+}
+@media only screen and (max-width: 992px) {
+  #greeting {
+    font-size: 80px;
+  }
+  #about__overview,
+  #features__escrow {
+    width: 100%;
+    display: table-row;
+  }
+  #about__apps,
+  #features__discontinue {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+    text-align: left;
+  }
+  #apps-2 {
+    float: left;
+  }
+}

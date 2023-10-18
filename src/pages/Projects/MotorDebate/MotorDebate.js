@@ -1,17 +1,18 @@
-import bannerBackground from "../assets/home/projects/motordebate.gif";
-import tile_1a from "../assets/motordebate/tile-1a.png";
-import tile_1b from "../assets/motordebate/tile-1b.png";
-import tile_2a from "../assets/motordebate/tile-2a.png";
-import tile_2b from "../assets/motordebate/tile-2b.png";
-import tile_3a from "../assets/motordebate/tile-3a.png";
-import tile_3b from "../assets/motordebate/tile-3b.png";
-import Banner from "../components/Banner.js";
-import "../styles/motordebate.css";
+import bannerBackground from "assets/home/projects/motordebate.gif";
+import tile_1a from "assets/motordebate/tile-1a.png";
+import tile_1b from "assets/motordebate/tile-1b.png";
+import tile_2a from "assets/motordebate/tile-2a.png";
+import tile_2b from "assets/motordebate/tile-2b.png";
+import tile_3a from "assets/motordebate/tile-3a.png";
+import tile_3b from "assets/motordebate/tile-3b.png";
+import ProjectBanner from "components/ProjectBanner/ProjectBanner";
+
+import "./MotorDebate.css";
 
 function MotorDebate() {
   return (
     <div id="homePage">
-      <Banner text="MOTORDEBATE" background={bannerBackground} />
+      <ProjectBanner text="MOTORDEBATE" background={bannerBackground} />
       <div className="wrapper--about">
         <div className="content">
           <div id="about__overview">

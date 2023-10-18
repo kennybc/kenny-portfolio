@@ -1,11 +1,12 @@
-import bannerBackground from "../assets/home/projects/writerjs.gif";
-import Banner from "../components/Banner";
-import "../styles/writerjs.css";
+import bannerBackground from "assets/home/projects/writerjs.gif";
+import ProjectBanner from "components/ProjectBanner/ProjectBanner";
+
+import "./WriterJS.css";
 
 function WriterJS() {
   return (
     <div id="homePage">
-      <Banner text="WRITER JS" background={bannerBackground} />
+      <ProjectBanner text="WRITER JS" background={bannerBackground} />
       <div class="wrapper--about">
         <div class="content">
           <div id="about__overview">

@@ -131,13 +131,13 @@
   content: "Learning";
 }
 #skills-2 > span[data-level="proficient"]:after {
-  background-image: url(../assets/home/badges/proficient.svg);
+  background-image: url(assets/home/badges/proficient.svg);
 }
 #skills-2 > span[data-level="intermediate"]:after {
-  background-image: url(../assets/home/badges/intermediate.svg);
+  background-image: url(assets/home/badges/intermediate.svg);
 }
 #skills-2 > span[data-level="learning"]:after {
-  background-image: url(../assets/home/badges/learning.svg);
+  background-image: url(assets/home/badges/learning.svg);
 }
 #skills-2 > span:last-child {
   margin-bottom: 0;

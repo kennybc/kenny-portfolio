@@ -1,12 +1,13 @@
+import Home from "pages/Home/Home.js";
+import MotorDebate from "pages/Projects/MotorDebate/MotorDebate.js";
+import NFTEscrow from "pages/Projects/NFTEscrow/NFTEscrow.js";
+import WriterJS from "pages/Projects/WriterJS/WriterJS.js";
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import "./index.css";
-import Home from "./pages/home.js";
-import MotorDebate from "./pages/motordebate.js";
-import NFTEscrow from "./pages/nftescrow.js";
-import WriterJS from "./pages/writerjs.js";
+import "./global.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

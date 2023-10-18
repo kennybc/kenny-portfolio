@@ -1,11 +1,12 @@
+import motordebate from "assets/home/projects/motordebate.png";
+import nftescrow from "assets/home/projects/nftescrow.png";
+import writerjs from "assets/home/projects/writerjs.png";
+
 import { Link } from "react-router-dom";
 
-import motordebate from "../assets/home/projects/motordebate.png";
-import nftescrow from "../assets/home/projects/nftescrow.png";
-import writerjs from "../assets/home/projects/writerjs.png";
-import "../styles/home.css";
+import "./Home.css";
 
-function Home() {
+export default function Home() {
   return (
     <div id="homePage">
       <div className="wrapper--greeting">
@@ -140,5 +141,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

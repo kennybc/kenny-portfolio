@@ -1,10 +1,10 @@
-import "../styles/Banner.css";
-import BackButton from "./BackButton";
+import BackButton from "../BackButton/BackButton";
+import "./ProjectBanner.css";
 
 export default function Banner({ text, background }) {
   return (
     <div
-      className="banner"
+      className="ProjectBanner"
       style={{
         backgroundImage:
           "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(" +

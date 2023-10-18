@@ -1,13 +1,14 @@
-import bannerBackground from "../assets/home/projects/nftescrow.gif";
-import tx1 from "../assets/nftescrow/tx1.png";
-import tx2 from "../assets/nftescrow/tx2.png";
-import Banner from "../components/Banner";
-import "../styles/nftescrow.css";
+import bannerBackground from "assets/home/projects/nftescrow.gif";
+import tx1 from "assets/nftescrow/tx1.png";
+import tx2 from "assets/nftescrow/tx2.png";
+import ProjectBanner from "components/ProjectBanner/ProjectBanner";
+
+import "./NFTEscrow.css";
 
 function NFTEscrow() {
   return (
     <div id="homePage">
-      <Banner text="NFT ESCROW" background={bannerBackground} />
+      <ProjectBanner text="NFT ESCROW" background={bannerBackground} />
       <div class="wrapper--about">
         <div class="content">
           <div id="about__overview">
