@@ -6,12 +6,12 @@ function BackButton() {
   let navigate = useNavigate();
   return (
     <div
-      className="back-button"
+      className="BackButton"
       onClick={() => {
         navigate(-1);
       }}
     >
-      <i className="back-icon">&#8249;</i> Back
+      <i className="BackButton__Icon">&#8249;</i> Back
     </div>
   );
 }
