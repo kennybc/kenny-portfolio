@@ -5,13 +5,14 @@ import tile_2a from "assets/motordebate/tile-2a.png";
 import tile_2b from "assets/motordebate/tile-2b.png";
 import tile_3a from "assets/motordebate/tile-3a.png";
 import tile_3b from "assets/motordebate/tile-3b.png";
-import ProjectBanner from "components/ProjectBanner/ProjectBanner";
+import Page from "components/Page";
+import ProjectBanner from "components/ProjectBanner";
 
 import "./MotorDebate.css";
 
 function MotorDebate() {
   return (
-    <div id="homePage">
+    <Page className="MotorDebate">
       <ProjectBanner text="MOTORDEBATE" background={bannerBackground} />
       <div className="wrapper--about">
         <div className="content">
@@ -218,7 +219,7 @@ function MotorDebate() {
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
 

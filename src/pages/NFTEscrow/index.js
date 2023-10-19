@@ -1,18 +1,19 @@
 import bannerBackground from "assets/home/projects/nftescrow.gif";
 import tx1 from "assets/nftescrow/tx1.png";
 import tx2 from "assets/nftescrow/tx2.png";
-import ProjectBanner from "components/ProjectBanner/ProjectBanner";
+import Page from "components/Page";
+import ProjectBanner from "components/ProjectBanner";
 
 import "./NFTEscrow.css";
 
 function NFTEscrow() {
   return (
-    <div id="homePage">
+    <Page className="NFTEscrow">
       <ProjectBanner text="NFT ESCROW" background={bannerBackground} />
-      <div class="wrapper--about">
-        <div class="content">
+      <div className="wrapper--about">
+        <div className="content">
           <div id="about__overview">
-            <span id="overview-1" class="title">
+            <span id="overview-1" className="title">
               Project Overview
             </span>
             <span id="overview-2">
@@ -26,12 +27,12 @@ function NFTEscrow() {
             </span>
           </div>
           <div id="about__apps">
-            <span id="apps-1" class="title">
+            <span id="apps-1" className="title">
               Features
             </span>
             <div id="apps-2">
               <div
-                class="apps__app"
+                className="apps__app"
                 style={{
                   background:
                     "linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #6f1986",
@@ -40,7 +41,7 @@ function NFTEscrow() {
                 Secure Transacting
               </div>
               <div
-                class="apps__app"
+                className="apps__app"
                 style={{
                   background:
                     "linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #245d8b",
@@ -49,7 +50,7 @@ function NFTEscrow() {
                 Easy/Intuitive Interface
               </div>
               <div
-                class="apps__app"
+                className="apps__app"
                 style={{
                   background:
                     "linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #9a0026",
@@ -58,7 +59,7 @@ function NFTEscrow() {
                 Cross-Currency Trading
               </div>
               <div
-                class="apps__app"
+                className="apps__app"
                 style={{
                   background:
                     "linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), #138674",
@@ -70,10 +71,10 @@ function NFTEscrow() {
           </div>
         </div>
       </div>
-      <div class="wrapper-features">
-        <div class="content" style={{ background: "white" }}>
+      <div className="wrapper-features">
+        <div className="content" style={{ background: "white" }}>
           <div id="features__escrow">
-            <span id="escrow-1" class="title">
+            <span id="escrow-1" className="title">
               Escrow
             </span>
             <span id="escrow-2">
@@ -95,7 +96,7 @@ function NFTEscrow() {
             </span>
           </div>
           <div id="features__discontinue">
-            <span id="discontinue-1" class="title">
+            <span id="discontinue-1" className="title">
               Discontinuation
             </span>
             <span id="discontinue-2">
@@ -112,7 +113,7 @@ function NFTEscrow() {
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
 

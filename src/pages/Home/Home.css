@@ -1,28 +1,24 @@
 .Home .greeting {
-  background: black;
+  background: var(--bg-dark);
   z-index: -2;
 }
-.Home .greeting:before {
+.Home .greeting:before,
+.Home .greeting:after {
+  --theta: 2deg;
+  --height: calc(100vw * sin(var(--theta)));
   position: absolute;
   content: "";
-  bottom: -1.746vw;
+  bottom: calc(-0.5 * var(--height));
   left: 0;
   width: 100%;
-  height: 3.492vw;
-  background: #ed427b;
-  transform: skewY(2deg);
+  height: var(--height);
+  background: var(--bg-mid);
+  transform: skewY(var(--theta));
   z-index: -1;
 }
 .Home .greeting:after {
-  position: absolute;
-  content: "";
-  bottom: -1.746vw;
-  left: 0;
-  width: 100%;
-  height: 3.492vw;
-  background: white;
   transform: skewY(-2deg);
-  z-index: -1;
+  background: white;
 }
 
 #greeting__text {
@@ -35,30 +31,36 @@
   font-size: 60px;
   display: block;
   font-weight: bold;
-  color: white;
+  color: var(--secondary);
 }
 #greeting-2 {
   font-size: 25px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--secondary);
+  opacity: 0.8;
 }
 #greeting-2 > a {
-  color: #e6a5d8;
+  color: var(--bg-light);
   font-weight: bold;
 }
-#greeting__chars {
+
+.Home .greeting__bg {
   position: absolute;
-  fill: #ffffff;
-  transform: scale(1.5) translateY(-50%) skewX(-25deg);
-  transform-origin: top left;
-  z-index: 1;
-  left: 35%;
-  top: 50%;
-  opacity: 0.15;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  mask-image: url(assets/characters.svg);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  z-index: -3;
+  transform: skewX(-30deg) translate(100px, -20px);
+  background-color: var(--bg-light);
+  opacity: 0.1;
 }
 
 .Home .about {

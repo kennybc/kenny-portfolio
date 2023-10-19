@@ -1,18 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./BackButton.css";
 
 function BackButton() {
   let navigate = useNavigate();
   return (
-    <div
-      className="BackButton"
-      onClick={() => {
-        navigate(-1);
-      }}
-    >
+    <Link className="BackButton" to="/">
       <i className="BackButton__Icon">&#8249;</i> Back
-    </div>
+    </Link>
   );
 }
 

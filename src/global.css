@@ -1,7 +1,14 @@
+:root {
+  --primary: #21675e;
+  --secondary: #fff4e6;
+  --bg-dark: #2b2121;
+  --bg-mid: #854442;
+  --bg-light: #be9b7b;
+}
 body {
   font-family: "Alata", Calibri, sans-serif;
   margin: 0;
-  background: rgb(84, 38, 74);
+  background: var(--background);
   overflow-x: hidden;
 }
 #viewport {

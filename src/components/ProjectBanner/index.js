@@ -1,4 +1,5 @@
-import BackButton from "../BackButton/BackButton";
+import BackButton from "components/BackButton";
+
 import "./ProjectBanner.css";
 
 export default function Banner({ text, background }) {

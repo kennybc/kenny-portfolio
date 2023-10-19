@@ -1,7 +1,8 @@
 .Block {
+  display: flex;
   width: 100%;
-  display: table;
   position: relative;
+  overflow-x: hidden;
 }
 .Block--Small > .Block__Content {
   padding: 20px 4px;
@@ -19,6 +20,7 @@
   width: 100%;
   max-width: 1080px;
   margin: auto;
+  position: relative;
 }
 @media only screen and (max-width: 1400px) {
   .Block__Content {

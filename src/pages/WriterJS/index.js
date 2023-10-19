@@ -1,16 +1,17 @@
 import bannerBackground from "assets/home/projects/writerjs.gif";
-import ProjectBanner from "components/ProjectBanner/ProjectBanner";
+import Page from "components/Page";
+import ProjectBanner from "components/ProjectBanner";
 
 import "./WriterJS.css";
 
 function WriterJS() {
   return (
-    <div id="homePage">
+    <Page className="WriterJS">
       <ProjectBanner text="WRITER JS" background={bannerBackground} />
-      <div class="wrapper--about">
-        <div class="content">
+      <div className="wrapper--about">
+        <div className="content">
           <div id="about__overview">
-            <span id="overview-1" class="title">
+            <span id="overview-1" className="title">
               Project Overview
             </span>
             <span id="overview-2">
@@ -30,7 +31,7 @@ function WriterJS() {
             </span>
           </div>
           <div id="about__demo">
-            <span id="demo-1" class="title">
+            <span id="demo-1" className="title">
               Demo
             </span>
             <div id="demo-2">
@@ -39,10 +40,10 @@ function WriterJS() {
           </div>
         </div>
       </div>
-      <div class="wrapper-features">
-        <div class="content" style={{ background: "white" }}>
+      <div className="wrapper-features">
+        <div className="content" style={{ background: "white" }}>
           <div id="features__compat">
-            <span id="compat-1" class="title">
+            <span id="compat-1" className="title">
               Compatibility
             </span>
             <span id="compat-2">
@@ -68,31 +69,31 @@ function WriterJS() {
               .
               <div id="compat-3">
                 <div style={{ display: "table-row", background: "#cccccc" }}>
-                  <div class="compat__browser"> Chrome </div>
-                  <div class="compat__browser"> Edge </div>
-                  <div class="compat__browser"> Firefox </div>
-                  <div class="compat__browser"> Safari </div>
-                  <div class="compat__browser"> Opera </div>
+                  <div className="compat__browser"> Chrome </div>
+                  <div className="compat__browser"> Edge </div>
+                  <div className="compat__browser"> Firefox </div>
+                  <div className="compat__browser"> Safari </div>
+                  <div className="compat__browser"> Opera </div>
                 </div>
                 <div style={{ display: "table-row" }}>
-                  <div class="compat__browser"> v 58 </div>
-                  <div class="compat__browser"> v 14 </div>
-                  <div class="compat__browser"> v 54 </div>
-                  <div class="compat__browser"> v 10 </div>
-                  <div class="compat__browser"> v 55 </div>
+                  <div className="compat__browser"> v 58 </div>
+                  <div className="compat__browser"> v 14 </div>
+                  <div className="compat__browser"> v 54 </div>
+                  <div className="compat__browser"> v 10 </div>
+                  <div className="compat__browser"> v 55 </div>
                 </div>
-                <div style={{ display: "table-row", background: "#f2f2f2;" }}>
-                  <div class="compat__browser"> 1/17 </div>
-                  <div class="compat__browser"> 8/16 </div>
-                  <div class="compat__browser"> 3/17 </div>
-                  <div class="compat__browser"> 7/16 </div>
-                  <div class="compat__browser"> 8/18 </div>
+                <div style={{ display: "table-row", background: "#f2f2f2" }}>
+                  <div className="compat__browser"> 1/17 </div>
+                  <div className="compat__browser"> 8/16 </div>
+                  <div className="compat__browser"> 3/17 </div>
+                  <div className="compat__browser"> 7/16 </div>
+                  <div className="compat__browser"> 8/18 </div>
                 </div>
               </div>
             </span>
           </div>
           <div id="features__specs">
-            <span id="specs-1" class="title">
+            <span id="specs-1" className="title">
               Features
             </span>
             <span id="specs-2">
@@ -131,7 +132,7 @@ function WriterJS() {
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
 

@@ -1,7 +1,8 @@
 import motordebate from "assets/home/projects/motordebate.png";
 import nftescrow from "assets/home/projects/nftescrow.png";
 import writerjs from "assets/home/projects/writerjs.png";
-import Block from "components/Block/Block";
+import Block from "components/Block";
+import Page from "components/Page";
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +10,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div class="Home">
+    <Page className="Home">
       <Block className="greeting Block--Large">
         <div id="greeting__text">
           <span id="greeting-1"> Hi, I'm Kenny. </span>
@@ -17,7 +18,7 @@ export default function Home() {
             <a>+</a> Student and software engineer.{" "}
           </span>
         </div>
-        <img id="greeting__chars" src="img/characters.svg" draggable="false" />
+        <div className="greeting__bg"></div>
       </Block>
       <Block className="about Block--Medium">
         <div id="about__skills">
@@ -131,6 +132,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 }
