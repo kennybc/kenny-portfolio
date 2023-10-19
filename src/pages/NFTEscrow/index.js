@@ -2,7 +2,7 @@ import bannerBackground from "assets/home/projects/nftescrow.gif";
 import tx1 from "assets/nftescrow/tx1.png";
 import tx2 from "assets/nftescrow/tx2.png";
 import Page from "components/Page";
-import ProjectBanner from "components/ProjectBanner";
+import ProjectBanner from "components/Project/ProjectBanner";
 
 import "./NFTEscrow.css";
 

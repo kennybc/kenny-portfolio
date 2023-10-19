@@ -2,7 +2,7 @@ import BackButton from "components/BackButton";
 
 import "./ProjectBanner.css";
 
-export default function Banner({ text, background }) {
+export default function ProjectBanner({ text, background }) {
   return (
     <div
       className="ProjectBanner"

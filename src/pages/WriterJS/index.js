@@ -1,6 +1,6 @@
 import bannerBackground from "assets/home/projects/writerjs.gif";
 import Page from "components/Page";
-import ProjectBanner from "components/ProjectBanner";
+import ProjectBanner from "components/Project/ProjectBanner";
 
 import "./WriterJS.css";
 

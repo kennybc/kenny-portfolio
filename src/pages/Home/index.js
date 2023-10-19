@@ -1,8 +1,10 @@
 import motordebate from "assets/home/projects/motordebate.png";
+import motordebate2 from "assets/home/projects/motordebate.svg";
 import nftescrow from "assets/home/projects/nftescrow.png";
 import writerjs from "assets/home/projects/writerjs.png";
 import Block from "components/Block";
 import Page from "components/Page";
+import { ProjectSlide } from "components/Project";
 
 import { Link } from "react-router-dom";
 
@@ -13,12 +15,23 @@ export default function Home() {
     <Page className="Home">
       <Block className="greeting Block--Large">
         <div id="greeting__text">
-          <span id="greeting-1"> Hi, I'm Kenny. </span>
+          <span id="greeting-1"> Lorem Ipsum </span>
           <span id="greeting-2">
-            <a>+</a> Student and software engineer.{" "}
+            <i>&#9670;</i> Lorem ipsum dolor sit amet, consectetur.
           </span>
         </div>
         <div className="greeting__bg"></div>
+      </Block>
+      <Block className="projects Block--Medium Block--Full">
+        <div className="projects__slideshow">
+          <div>
+            <ProjectSlide title="1" background={motordebate2} />
+            <ProjectSlide title="2" background={motordebate2} />
+            <ProjectSlide title="3" background={motordebate2} />
+            <ProjectSlide title="4" background={motordebate2} />
+            <ProjectSlide title="5" background={motordebate2} />
+          </div>{" "}
+        </div>
       </Block>
       <Block className="about Block--Medium">
         <div id="about__skills">
@@ -27,28 +40,28 @@ export default function Home() {
           </span>
           <span id="skills-2">
             <span data-level="proficient">
-              <a>+</a> Java
+              <i>&#9670;</i> Java
             </span>
             <span data-level="proficient">
-              <a>+</a> HTML/CSS/JS
+              <i>&#9670;</i> HTML/CSS/JS
             </span>
             <span data-level="proficient">
-              <a>+</a> PHP/SQL
+              <i>&#9670;</i> PHP/SQL
             </span>
             <span data-level="proficient">
-              <a>+</a> Python
+              <i>&#9670;</i> Python
             </span>
             <span data-level="intermediate">
-              <a>+</a> C/C++
+              <i>&#9670;</i> C/C++
             </span>
             <span data-level="intermediate">
-              <a>+</a> Node.js
+              <i>&#9670;</i> Node.js
             </span>
             <span data-level="intermediate">
-              <a>+</a> PS/Inkscape
+              <i>&#9670;</i> PS/Inkscape
             </span>
             <span data-level="learning">
-              <a>+</a> Solidity
+              <i>&#9670;</i> Solidity
             </span>
           </span>
         </div>
@@ -83,7 +96,7 @@ export default function Home() {
               <div className="project__about">
                 <div>
                   <span>
-                    <a>+</a> PHP-based blog built entirely from scratch.
+                    <i>&#9670;</i> PHP-based blog built entirely from scratch.
                   </span>
                   <div
                     className="button--light project__button"
@@ -100,8 +113,8 @@ export default function Home() {
               <div className="project__about">
                 <div>
                   <span>
-                    <a>+</a> Dependency-free, block-based, WYSIWYG JavaScript
-                    editor.
+                    <i>&#9670;</i> Dependency-free, block-based, WYSIWYG
+                    JavaScript editor.
                   </span>
                   <div
                     className="button--light project__button"
@@ -118,7 +131,7 @@ export default function Home() {
               <div className="project__about">
                 <div>
                   <span>
-                    <a>+</a> An escrow service for NFT exchanges.
+                    <i>&#9670;</i> An escrow service for NFT exchanges.
                   </span>
                   <div
                     className="button--light project__button"

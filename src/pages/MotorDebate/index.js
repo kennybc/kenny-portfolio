@@ -6,7 +6,7 @@ import tile_2b from "assets/motordebate/tile-2b.png";
 import tile_3a from "assets/motordebate/tile-3a.png";
 import tile_3b from "assets/motordebate/tile-3b.png";
 import Page from "components/Page";
-import ProjectBanner from "components/ProjectBanner";
+import ProjectBanner from "components/Project/ProjectBanner";
 
 import "./MotorDebate.css";
 

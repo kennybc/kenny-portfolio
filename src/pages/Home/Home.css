@@ -1,10 +1,15 @@
+.Home {
+  --theta: 4deg;
+}
+
+/***** Greeting Block *****/
 .Home .greeting {
   background: var(--bg-dark);
+  overflow: hidden;
   z-index: -2;
 }
 .Home .greeting:before,
 .Home .greeting:after {
-  --theta: 2deg;
   --height: calc(100vw * sin(var(--theta)));
   position: absolute;
   content: "";
@@ -17,10 +22,9 @@
   z-index: -1;
 }
 .Home .greeting:after {
-  transform: skewY(-2deg);
+  transform: skewY(calc(-1 * var(--theta)));
   background: white;
 }
-
 #greeting__text {
   position: relative;
   z-index: 2;
@@ -38,11 +42,11 @@
   color: var(--secondary);
   opacity: 0.8;
 }
-#greeting-2 > a {
+#greeting-2 > i {
+  font-style: normal;
   color: var(--bg-light);
   font-weight: bold;
 }
-
 .Home .greeting__bg {
   position: absolute;
   top: 0;
@@ -63,8 +67,29 @@
   opacity: 0.1;
 }
 
-.Home .about {
+/***** Projects Block *****/
+.Home .projects {
   background: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Home .projects__slideshow {
+  position: relative;
+  height: 250px;
+  overflow-x: scroll;
+}
+.Home .projects__slideshow > div {
+  position: absolute;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/***** About Block *****/
+.Home .about {
+  background: var(--secondary);
 }
 
 #about__skills {
@@ -154,9 +179,10 @@
 #skills-2 > span:last-child {
   margin-bottom: 0;
 }
-#skills-2 > span > a {
-  color: #d35fbb;
+#skills-2 > span > i {
+  color: var(--bg-light);
   font-weight: bold;
+  font-style: normal;
   margin-right: 5px;
 }
 .wrapper--projects {
