@@ -13,20 +13,10 @@ body {
   background-size: 100% 100%;
   overflow: hidden;
 }
-.white-wrapper {
-  position: fixed;
-  left: 0;
-  width: 100vw;
-  top: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .white {
-  transform: rotate(0deg);
-  transform-origin: 50% 0;
-  animation: spin 100s infinite linear;
-  backdrop-filter: invert(100%) brightness(120%);
-  display: table;
+  position: fixed;
+  left: 50vw;
+  transform: rotate(60deg);
+  transform-origin: 0 50%;
+  backdrop-filter: invert(100%) brightness(110%);
 }

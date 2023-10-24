@@ -13,7 +13,11 @@ import "./global.css";
 
 function App() {
   const location = useLocation();
-  const { width: splitWidth, height: splitHeight } = getSplitDimensions();
+  const {
+    width: splitWidth,
+    height: splitHeight,
+    offset: splitOffset,
+  } = getSplitDimensions();
   return (
     <div>
       <AnimatePresence
@@ -28,12 +32,14 @@ function App() {
           <Route path="nftescrow" element={<NFTEscrow />} />
         </Routes>
       </AnimatePresence>
-      <div className="white-wrapper" style={{ height: splitHeight }}>
-        <div
-          className="white"
-          style={{ width: splitWidth, height: splitHeight }}
-        ></div>
-      </div>
+      <div
+        className="white"
+        style={{
+          width: splitWidth,
+          height: splitHeight,
+          marginTop: splitOffset,
+        }}
+      ></div>
     </div>
   );
 }

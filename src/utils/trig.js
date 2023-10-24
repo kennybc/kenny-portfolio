@@ -6,7 +6,8 @@ export function getSplitDimensions(theta) {
   const b = windowWidth / 2;
   const c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
   return {
-    width: 2 * c,
+    width: c,
     height: 2 * c,
+    offset: -c + a,
   };
 }
