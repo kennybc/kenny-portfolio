@@ -1,0 +1,33 @@
+.Wrapper {
+  --slant: 10deg;
+  --offset: 0deg;
+  --theta: 0deg;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+.Wrapper--Landscape {
+  --offset: 0deg;
+}
+.Wrapper--Portrait {
+  --offset: 90deg;
+}
+
+.Wrapper--Heaven {
+  --theta: calc(var(--offset) + 180deg);
+}
+.Wrapper--Wind {
+  --theta: calc(var(--offset) + var(--slant) + 180deg);
+}
+.Wrapper--Mountain {
+  --theta: calc(var(--offset) - var(--slant));
+}
+.Wrapper--Earth {
+  --theta: var(--offset);
+}
+.Wrapper--Thunder {
+  --theta: var(--offset) + var(--slant);
+}
+.Wrapper--Lake {
+  --theta: calc(var(--offset) - var(--slant) + 180deg);
+}

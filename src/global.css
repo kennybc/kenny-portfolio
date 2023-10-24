@@ -12,5 +12,5 @@ body {
   background-image: url(assets/suminagashi.png);
   background-size: calc(max(100%, 1000px));
   background-position: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }

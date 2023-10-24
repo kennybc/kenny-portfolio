@@ -1,4 +1,4 @@
-import Router from "components/Router";
+import Wrapper from "components/Wrapper";
 import * as Pages from "pages";
 
 import React from "react";
@@ -9,12 +9,12 @@ import "./global.css";
 
 function App() {
   return (
-    <Router>
+    <Wrapper>
       <Route index element={<Pages.Home />} />
       <Route path="motordebate" element={<Pages.MotorDebate />} />
       <Route path="writerjs" element={<Pages.WriterJS />} />
       <Route path="nftescrow" element={<Pages.NFTEscrow />} />
-    </Router>
+    </Wrapper>
   );
 }
 

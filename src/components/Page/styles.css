@@ -1,0 +1,22 @@
+.Page {
+  display: flex;
+  flex-direction: row;
+}
+.Yin,
+.Yang {
+  width: 50%;
+}
+
+.Yin__Content,
+.Yang__Content {
+}
+
+.Yang__Slant {
+  height: 100vh;
+  width: 20vh;
+  background: red;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  float: right;
+  shape-outside: polygon(100% 0, 0 0, 100% 100%);
+  opacity: 0.5;
+}
