@@ -1,0 +1,8 @@
+.Split {
+  --theta: 10deg;
+  position: fixed;
+  left: 50vw;
+  transform: rotate(calc(110deg - var(--theta)));
+  transform-origin: 0 50%;
+  backdrop-filter: invert(100%) brightness(110%);
+}
