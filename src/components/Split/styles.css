@@ -1,8 +1,29 @@
 .Split {
   --theta: 10deg;
   position: fixed;
+  top: 0;
   left: 50vw;
-  transform: rotate(calc(110deg - var(--theta)));
   transform-origin: 0 50%;
   backdrop-filter: invert(100%) brightness(110%);
+  z-index: -1;
+  transition: transform 0.8s ease;
+}
+
+.Split--Heaven {
+  transform: rotate(180deg);
+}
+.Split--Wind {
+  transform: rotate(calc(var(--theta) + 180deg));
+}
+.Split--Mountain {
+  transform: rotate(calc(0deg - var(--theta)));
+}
+.Split--Earth {
+  transform: rotate(0deg);
+}
+.Split--Thunder {
+  transform: rotate(var(--theta));
+}
+.Split--Lake {
+  transform: rotate(calc(180deg - var(--theta)));
 }
