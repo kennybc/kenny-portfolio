@@ -1,80 +1,32 @@
 :root {
-  --primary: #21675e;
-  --secondary: #fff4e6;
-  --bg-dark: #2b2121;
-  --bg-mid: #854442;
-  --bg-light: #be9b7b;
+  --white: white;
+  --black: black;
+}
+html {
+  height: 100%;
 }
 body {
   font-family: "Alata", Calibri, sans-serif;
   margin: 0;
-  background: var(--background);
-  overflow-x: hidden;
+  background-color: var(--black);
+  background-image: url(assets/suminagashi.png);
+  background-size: 100% 100%;
+  overflow: hidden;
 }
-#viewport {
-  position: relative;
-  overflow-x: hidden;
-  background: white;
-  transform: scale(0.9);
-  transition: transform 0.5s;
-  box-sizing: border-box;
-}
-#loader {
-  width: 100%;
-  height: 100%;
-  background: rgb(84, 38, 74);
-  position: absolute;
-  top: 0;
+.white-wrapper {
+  position: fixed;
   left: 0;
-  z-index: 100;
-  transition:
-    width 0.3s ease-in,
-    opacity 0.5s,
-    visibility 0.5s;
+  width: 100vw;
+  top: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-* {
-  box-sizing: border-box;
-}
-.content {
-  padding: 75px 250px;
-}
-.title {
-  font-size: 30px;
-}
-.button--light {
-  display: inline-table;
-  background: rgba(255, 255, 255, 0.9);
-  color: black;
-  mix-blend-mode: screen;
-  font-weight: bold;
-  padding: 15px 20px;
-  font-size: 13px;
-  text-transform: uppercase;
-  transition: background 0.3s;
-}
-.button--light:hover {
-  background: white;
-}
-@media only screen and (max-width: 1400px) {
-  .content {
-    padding: 50px 150px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .content {
-    padding: 50px 100px;
-  }
-  .title {
-    font-size: 26px !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .content {
-    padding: 40px 50px;
-  }
-}
-@media only screen and (max-width: 560px) {
-  .content {
-    padding: 30px 20px;
-  }
+.white {
+  transform: rotate(0deg);
+  transform-origin: 50% 0;
+  animation: spin 100s infinite linear;
+  backdrop-filter: invert(100%) brightness(120%);
+  display: table;
 }

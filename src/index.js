@@ -3,6 +3,7 @@ import Home from "pages/Home/index.js";
 import MotorDebate from "pages/MotorDebate/index.js";
 import NFTEscrow from "pages/NFTEscrow/index.js";
 import WriterJS from "pages/WriterJS/index.js";
+import { getSplitDimensions } from "utils/trig";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -12,6 +13,7 @@ import "./global.css";
 
 function App() {
   const location = useLocation();
+  const { width: splitWidth, height: splitHeight } = getSplitDimensions();
   return (
     <div>
       <AnimatePresence
@@ -26,11 +28,18 @@ function App() {
           <Route path="nftescrow" element={<NFTEscrow />} />
         </Routes>
       </AnimatePresence>
+      <div className="white-wrapper" style={{ height: splitHeight }}>
+        <div
+          className="white"
+          style={{ width: splitWidth, height: splitHeight }}
+        ></div>
+      </div>
     </div>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <BrowserRouter>
     <App />

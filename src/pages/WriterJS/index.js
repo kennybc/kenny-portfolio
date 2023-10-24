@@ -1,13 +1,11 @@
 import bannerBackground from "assets/home/projects/writerjs.gif";
 import Page from "components/Page";
-import ProjectBanner from "components/Project/ProjectBanner";
 
 import "./WriterJS.css";
 
 function WriterJS() {
   return (
     <Page className="WriterJS">
-      <ProjectBanner text="WRITER JS" background={bannerBackground} />
       <div className="wrapper--about">
         <div className="content">
           <div id="about__overview">

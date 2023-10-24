@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import routeVariants from "pages/routeVariants";
 
-export default function Block({ className, children }) {
+export default function Page({ className, children }) {
   return (
     <motion.div
       className={className}
