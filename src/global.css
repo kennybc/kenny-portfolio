@@ -10,6 +10,7 @@ body {
   margin: 0;
   background-color: var(--black);
   background-image: url(assets/suminagashi.png);
-  background-size: 100% 100%;
+  background-size: calc(max(100%, 1000px));
+  background-position: center;
   overflow-x: hidden;
 }
