@@ -1,36 +1,36 @@
 import { getSplitDimensions } from "utils/trig";
+import { useWindowDimensions } from "utils/window";
 
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import "./styles.css";
 
-export default function Split({ className, children }) {
+export default function Split() {
   const location = useLocation();
-  const splits = {
-    "/home": "Lake",
-    "/nftescrow": "Mountain",
+  const route2split = {
+    "/": "Lake",
+    "/nftescrow": "Heaven",
   };
-  const {
-    width: splitWidth,
-    height: splitHeight,
-    offset: splitOffset,
-  } = getSplitDimensions();
-  const [split, setSplit] = useState(
-    splits[location.pathname] ?? splits["/home"],
-  );
+  const [split, setSplit] = useState(route2split[location.pathname]);
+
+  const splitDimensions = getSplitDimensions();
+  const windowDimensions = useWindowDimensions();
+  const orientation =
+    windowDimensions.width > windowDimensions.height ? "Landscape" : "Portrait";
 
   useEffect(() => {
-    setSplit(splits[location.pathname] ?? splits["/home"]);
+    setSplit(route2split[location.pathname]);
+    console.log(split);
   }, [location]);
 
   return (
     <div
-      className={"Split Split--" + split}
+      className={"Split Split--" + split + " Split--" + orientation}
       style={{
-        width: splitWidth,
-        height: splitHeight,
-        marginTop: splitOffset,
+        width: splitDimensions.width,
+        height: splitDimensions.height,
+        marginTop: splitDimensions.offset,
       }}
     ></div>
   );

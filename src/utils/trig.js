@@ -1,4 +1,4 @@
-import useWindowDimensions from "./window";
+import { useWindowDimensions } from "./window";
 
 export function getSplitDimensions(theta) {
   const { width: windowWidth, height: windowHeight } = useWindowDimensions();
