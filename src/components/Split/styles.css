@@ -6,5 +6,5 @@
   transform-origin: 0 50%;
   backdrop-filter: invert(100%) brightness(110%);
   z-index: -1;
-  transition: transform 0.8s ease;
+  transition: transform 0.7s ease;
 }

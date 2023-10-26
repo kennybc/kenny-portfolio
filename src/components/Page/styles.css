@@ -1,22 +1,73 @@
 .Page {
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--direction);
+  justify-content: space-between;
 }
 .Yin,
 .Yang {
-  width: 50%;
-}
-
-.Yin__Content,
-.Yang__Content {
-}
-
-.Yang__Slant {
+  --padding-y: 15vh;
+  --padding-x: 8vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  width: 20vh;
-  background: red;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
-  float: right;
-  shape-outside: polygon(100% 0, 0 0, 100% 100%);
-  opacity: 0.5;
+  width: calc(50% - var(--slant-width));
+  padding: var(--padding-y) var(--padding-x) var(--padding-y) var(--padding-x);
+}
+.Yin {
+  text-align: var(--yin);
+}
+.Yang {
+  text-align: var(--yang);
+}
+.Yin__Lesser,
+.Yang__Lesser {
+  content: "";
+  position: absolute;
+  width: 18vw;
+  height: 0.3vh;
+}
+.Yang__Lesser {
+  background: rgba(255, 255, 255, 0.3);
+  bottom: var(--padding-y);
+  right: var(--padding-x);
+}
+.Yin__Lesser {
+  background: rgba(0, 0, 0, 0.3);
+  top: var(--padding-y);
+  left: var(--padding-x);
+}
+.Page__Title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.Page__Content {
+  line-height: 24px;
+  position: relative;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  mask: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) 100%
+    )
+    0 0 / 100% 100%;
+  padding-top: 1em;
+}
+/*
+ * Empty padding space inserted at the end of content
+ * so text at the bottom can be scrolled into center view
+ */
+.Page__Content:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+.Page__Content::-webkit-scrollbar {
+  display: none;
 }

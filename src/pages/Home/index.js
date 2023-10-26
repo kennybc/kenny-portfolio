@@ -8,21 +8,38 @@ export default function Home() {
   return (
     <Page
       className="Home"
-      title="Home Page Title"
+      title="KENNETH CHEN"
       yang={
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id
-          turpis sit amet dui tempor blandit. Curabitur laoreet posuere massa,
-          et mollis enim. In sed ullamcorper risus, in dictum turpis. Maecenas
-          et congue felis. Morbi in vestibulum tellus. Fusce laoreet, nisi quis
-          vulputate sollicitudin, sem ipsum vestibulum justo, vulputate varius
-          tortor tortor in justo. Quisque feugiat leo maximus, aliquet quam ac,
-          hendrerit leo. Vivamus dignissim vestibulum nunc, vel fermentum nunc
-          pretium id. Ut vel dolor eget nunc dignissim tincidunt quis ac nisl.
-          Curabitur non volutpat massa, ut ullamcorper justo. Sed vehicula leo
-          non lorem pulvinar, ac malesuada metus mattis. Fusce vehicula quis
-          ipsum id ullamcorper. Nunc auctor rhoncus purus, eu fermentum purus
-          posuere id.
+          <p>
+            Hello and welcome. I'm Kenneth (Kenny) Chen, a creative and a
+            technologist, and this is my portfolio.
+          </p>
+          <p>
+            I'm currently an undergraduate computer science student at
+            Northeastern University with a concentration in software. Beyond my
+            studies in the logical and concrete, I find passion in the arts: the
+            spiritual and imaginative.
+          </p>
+          <p>
+            This website was built as a testament to yin and yang, which (in
+            simple terms) describes opposites in a state of balance and harmony.
+            This is a concept I've consciously and subconsciously explored and
+            applied throughout my life.
+          </p>
+          <p>
+            Being American-born of Chinese ethnicity, I find myself perpetually
+            seeking to better align with Chinese culture. The culture feels
+            incredibly nostalgic, and yet there is this distant but unshakable
+            feeling of alienation from mainland culture. I share this identity
+            struggle with many; it's difficult to be born halfway between two
+            cultures, not entirely one or the other. The best I can do is
+            embrace and celebrate the diversity of my unique heritage.
+          </p>
+          <p>
+            Much of my thinking and thus my work is affected by my cultural
+            identity, which I hope you find interesting.
+          </p>
         </div>
       }
       yin={

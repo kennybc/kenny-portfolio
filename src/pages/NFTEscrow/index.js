@@ -8,7 +8,7 @@ function NFTEscrow() {
   return (
     <Page
       className="Home"
-      title="Project Page Title"
+      title="PROJECT ONE"
       yang={
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id

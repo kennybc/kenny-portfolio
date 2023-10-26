@@ -11,3 +11,25 @@ export function getSplitDimensions(theta) {
     offset: -c + a,
   };
 }
+
+const skew = 5;
+const split2theta = {
+  Mountain: -skew,
+  Earth: 0,
+  Thunder: skew,
+  Lake: 180 - skew,
+  Heaven: 180,
+  Wind: 180 + skew,
+};
+
+export function getSlantDimensions(split, orientation) {
+  const theta = split2theta[split];
+  const offset = orientation === "Landscape" ? 0 : 90;
+  const rad = ((theta + 90) * Math.PI) / 180;
+  const reverse = theta < 90;
+  return {
+    theta: theta + offset,
+    width: Math.abs(Math.cos(rad)) * 50,
+    reverse,
+  };
+}

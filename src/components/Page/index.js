@@ -13,15 +13,13 @@ export default function Page({ className, title, yin, yang }) {
       exit="exit"
     >
       <div className="Yang">
-        <div className="Yang__Slant"></div>
-        <div className="Yang__Content">
-          <h1>{title}</h1>
-          {yang}
-        </div>
+        <div className="Yin__Lesser"></div>
+        <h1 className="Page__Title">{title}</h1>
+        <div className="Page__Content">{yang}</div>
       </div>
       <div className="Yin">
-        <div className="Yin__Content">{yin}</div>
-        <div className="Yin__Slant"></div>
+        <div className="Yang__Lesser"></div>
+        <div className="Page__Content">{yin}</div>
       </div>
     </motion.div>
   );

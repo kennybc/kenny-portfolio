@@ -9,7 +9,7 @@ export default function Split({ split, orientation }) {
 
   return (
     <div
-      className={"Split Split--" + split + " Split--" + orientation}
+      className="Split"
       style={{
         width: splitDimensions.width,
         height: splitDimensions.height,
