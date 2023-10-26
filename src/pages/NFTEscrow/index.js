@@ -1,6 +1,5 @@
 import Page from "components/Page";
-
-import { Link } from "react-router-dom";
+import URL from "components/URL";
 
 import "./NFTEscrow.css";
 
@@ -66,7 +65,7 @@ function NFTEscrow() {
       }
       yin={
         <div>
-          <Link to="/"> Home </Link>
+          <URL to="/"> Home </URL>
         </div>
       }
     />
