@@ -20,7 +20,7 @@ export default function Page({ className, title, yin, yang }) {
       </div>
       <div className="Yin">
         <div className="Yang__Lesser"></div>
-        <div className="Page__Content">{yin}</div>
+        <PageContent>{yin}</PageContent>
       </div>
     </motion.div>
   );

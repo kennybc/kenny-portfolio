@@ -1,7 +1,6 @@
 .PageContent {
   position: relative;
   overflow: auto;
-  flex-grow: 1;
 }
 .PageContent.PageContent--Scrollable {
   -ms-overflow-style: none;

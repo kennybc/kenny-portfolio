@@ -44,8 +44,10 @@ export default function Home() {
       }
       yin={
         <div className="Home__Links">
-          <Link to="/nftescrow"> NFT Escrow </Link>
-          <Link to="/motordebate"> MotorDebate </Link>
+          <Link to="/nftescrow"> Fusion Recipe Generator </Link>
+          <Link to="/nftescrow"> Yin Yang and its Philosophy </Link>
+          <Link to="/motordebate"> Musings and Tinkerings </Link>
+          <Link to="/motordebate"> Relics of the Past </Link>
         </div>
       }
     />

@@ -1,6 +1,7 @@
-.Home .Yin .Page__Content {
+.Home .Yin .PageContent {
   display: flex;
   align-items: flex-end;
+  height: 100%;
 }
 .Home__Links {
   width: 100%;
@@ -11,10 +12,10 @@
   color: white;
   text-decoration: none;
   width: 100%;
-  font-size: clamp(1rem, 1.5vmax, 3rem);
+  font-size: clamp(1.5rem, 1.5vmax, 3rem);
   opacity: 0.7;
   transition: opacity 0.2s ease;
-  margin: 30px 0 30px 0;
+  margin: 5vh 0 5vh 0;
   text-transform: uppercase;
 }
 .Home .Yin a:hover {
