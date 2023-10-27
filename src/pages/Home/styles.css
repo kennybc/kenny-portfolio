@@ -1,0 +1,22 @@
+.Home .Yin .Page__Content {
+  display: flex;
+  align-items: flex-end;
+}
+.Home__Links {
+  width: 100%;
+}
+
+.Home .Yin a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  font-size: clamp(1rem, 1.5vmax, 3rem);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  margin: 30px 0 30px 0;
+  text-transform: uppercase;
+}
+.Home .Yin a:hover {
+  opacity: 0.9;
+}

@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { getSlantDimensions } from "utils/trig";
 import { useWindowDimensions } from "utils/window";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Routes, useLocation } from "react-router-dom";
 
 import "./styles.css";
@@ -13,6 +13,7 @@ export default function Wrapper({ children }) {
   const route2split = {
     "/": "Lake",
     "/nftescrow": "Mountain",
+    "/motordebate": "Wind",
   };
   const [split, setSplit] = useState(route2split[location.pathname]);
   const windowDimensions = useWindowDimensions();
@@ -20,7 +21,6 @@ export default function Wrapper({ children }) {
     windowDimensions.width > windowDimensions.height ? "Landscape" : "Portrait";
 
   const slantDimensions = getSlantDimensions(split, orientation);
-  console.log(slantDimensions.reverse);
 
   return (
     <div
