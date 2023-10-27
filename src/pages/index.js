@@ -1,6 +1,4 @@
 import Home from "./Home";
-import MotorDebate from "./MotorDebate";
-import NFTEscrow from "./NFTEscrow";
-import WriterJS from "./WriterJS";
+import YinYang from "./YinYang";
 
-export { Home, MotorDebate, NFTEscrow, WriterJS };
+export { Home, YinYang };

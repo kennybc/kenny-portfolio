@@ -3,11 +3,23 @@
   flex-direction: var(--direction);
   justify-content: space-between;
 }
-.Page__Title {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  width: 100%;
+.Page__Header {
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+}
+.Page__Title,
+.Page__Subtitle {
+  margin: 0;
   text-transform: uppercase;
+}
+.Page__Title {
+  width: 100%;
+}
+.Page__Subtitle {
+  display: inline;
+  box-decoration-break: clone;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  background: rgba(127, 127, 127, 0.2);
 }
 /*
  * "Greater yin/yang" half-page section containers

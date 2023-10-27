@@ -9,11 +9,12 @@ export default function Home() {
     <Page
       className="Home"
       title="Kenneth Chen"
+      subtitle="technologist, creative"
       yang={
         <div>
           <p>
-            Hello and welcome. I'm Kenneth (Kenny) Chen, a creative and a
-            technologist, and this is my portfolio.
+            Hello and welcome. I'm Kenneth (Kenny) Chen, a technologist and a
+            creative, and this is my portfolio.
           </p>
           <p>
             I'm currently an undergraduate computer science student at
@@ -44,10 +45,9 @@ export default function Home() {
       }
       yin={
         <div className="Home__Links">
-          <Link to="/nftescrow"> Fusion Recipe Generator </Link>
-          <Link to="/nftescrow"> Yin Yang and its Philosophy </Link>
-          <Link to="/motordebate"> Musings and Tinkerings </Link>
-          <Link to="/motordebate"> Relics of the Past </Link>
+          <Link to="/fusion-recipe-generator">Fusion Recipe Generator</Link>
+          <Link to="/yin-yang">Yin Yang (kenny.us)</Link>
+          <Link to="/archive">Archive</Link>
         </div>
       }
     />

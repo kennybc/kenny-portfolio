@@ -1,5 +1,6 @@
 import Split from "components/Split";
 import { AnimatePresence } from "framer-motion";
+import { route2split } from "index.js";
 import { getSlantDimensions } from "utils/trig";
 import { useWindowDimensions } from "utils/window";
 
@@ -10,11 +11,6 @@ import "./styles.css";
 
 export default function Wrapper({ children }) {
   const location = useLocation();
-  const route2split = {
-    "/": "Lake",
-    "/nftescrow": "Mountain",
-    "/motordebate": "Wind",
-  };
   const [split, setSplit] = useState(route2split[location.pathname]);
   const windowDimensions = useWindowDimensions();
   const orientation =

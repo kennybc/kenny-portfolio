@@ -7,13 +7,16 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import "./global.css";
 
+export const route2split = {
+  "/": "Wind",
+  "/yin-yang": "Lake",
+};
+
 function App() {
   return (
     <Wrapper>
       <Route index element={<Pages.Home />} />
-      <Route path="motordebate" element={<Pages.MotorDebate />} />
-      <Route path="writerjs" element={<Pages.WriterJS />} />
-      <Route path="nftescrow" element={<Pages.NFTEscrow />} />
+      <Route path="/yin-yang" element={<Pages.YinYang />} />
     </Wrapper>
   );
 }

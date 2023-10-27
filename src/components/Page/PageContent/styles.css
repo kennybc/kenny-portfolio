@@ -1,10 +1,14 @@
 .PageContent {
   position: relative;
   overflow: auto;
-}
-.PageContent.PageContent--Scrollable {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+.PageContent::-webkit-scrollbar {
+  display: none;
+}
+
+.PageContent.PageContent--Scrollable {
   mask: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0,
@@ -18,9 +22,6 @@
  * Empty padding space inserted at the ends of content
  * so text can be scrolled into center view
  */
-.PageContent.PageContent--Scrollable p:first-of-type {
-  margin-top: 0;
-}
 .PageContent.PageContent--Scrollable:before {
   content: "⚊";
   display: block;
@@ -33,7 +34,4 @@
   display: block;
   width: 100%;
   height: 50%;
-}
-.PageContent.PageContent--Scrollable::-webkit-scrollbar {
-  display: none;
 }
