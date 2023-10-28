@@ -10,10 +10,10 @@
 .Page__Title,
 .Page__Subtitle {
   margin: 0;
-  text-transform: uppercase;
 }
 .Page__Title {
   width: 100%;
+  text-transform: uppercase;
 }
 .Page__Subtitle {
   display: inline;
@@ -36,14 +36,18 @@
   padding: var(--padding-y) var(--padding-x) var(--padding-y) var(--padding-x);
 }
 .Yin {
+  --fade-direction: to top;
   font-family: "Sometype Mono", sans-serif;
   text-align: var(--yin);
   color: rgba(255, 255, 255, 0.8);
+  padding-top: 0;
 }
 .Yang {
+  --fade-direction: to bottom;
   font-family: "Playfair Display", sans-serif;
   text-align: var(--yang);
   color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 0;
 }
 .Yin ::selection {
   background: rgba(255, 255, 255, 0.8);

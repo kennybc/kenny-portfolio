@@ -2,16 +2,18 @@
   position: relative;
   display: inline-flex;
   color: inherit;
-  background: rgba(127, 127, 127, 0.2);
+  background: rgba(127, 127, 127, 0.3);
   text-decoration: none;
-  margin: 0 2px 0 2px;
-  padding: 0 5px 0 5px;
+  margin: 0 0.1rem;
+  padding: 0 0.5rem;
   font-size: inherit;
   align-items: center;
   transition: background 0.2s ease;
+  line-height: normal;
+  vertical-align: text-bottom;
 }
 .URL svg {
-  margin-right: 5px;
+  margin-right: 0.5rem;
   opacity: 0.5;
 }
 .URL:hover {

@@ -25,15 +25,18 @@ export const useScrollDimensions = (ref) => {
   });
 
   useLayoutEffect(() => {
-    function handleResize() {
-      setScrollDimensions(getScrollDimensions(ref.current));
+    function measure() {
+      setScrollDimensions({
+        clientHeight: ref.current.clientHeight,
+        scrollHeight: ref.current.scrollHeight,
+      });
     }
-    setScrollDimensions(getScrollDimensions(ref.current));
-    window.addEventListener("load", handleResize);
-    window.addEventListener("resize", handleResize);
+    measure();
+    window.addEventListener("load", measure);
+    window.addEventListener("resize", measure);
     return () => {
-      window.removeEventListener("load", handleResize);
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", measure);
+      window.removeEventListener("resize", measure);
     };
   }, []);
 

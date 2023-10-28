@@ -9,7 +9,7 @@ import "./global.css";
 
 export const route2split = {
   "/": "Wind",
-  "/yin-yang": "Lake",
+  "/yin-yang": "Mountain",
 };
 
 function App() {
