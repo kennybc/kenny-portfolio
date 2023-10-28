@@ -10,7 +10,7 @@
 
 .PageContent.PageContent--Scrollable {
   mask: linear-gradient(
-      to bottom,
+      var(--fade-direction),
       rgba(0, 0, 0, 0) 0,
       rgba(0, 0, 0, 1) 1rem,
       rgba(0, 0, 0, 1) calc(100% - var(--padding-y)),
@@ -22,14 +22,15 @@
  * Empty padding space inserted at the ends of content
  * so text can be scrolled into center view
  */
-.PageContent.PageContent--Scrollable:before {
+.Yang .PageContent.PageContent--Scrollable:before {
   content: "⚊";
   display: block;
   height: 1rem;
   line-height: 1rem;
   opacity: 0.5;
 }
-.PageContent.PageContent--Scrollable:after {
+.Yang .PageContent.PageContent--Scrollable:after,
+.Yin .PageContent.PageContent--Scrollable:before {
   content: "";
   display: block;
   width: 100%;
