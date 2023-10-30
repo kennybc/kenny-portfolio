@@ -23,23 +23,11 @@ export default function Home() {
             spiritual and imaginative.
           </p>
           <p>
-            This website was built as a testament to yin and yang, which (in
-            simple terms) describes opposites in a state of balance and harmony.
-            This is a concept I've consciously and subconsciously explored and
-            applied throughout my life.
-          </p>
-          <p>
-            Being American-born of Chinese ethnicity, I find myself perpetually
-            seeking to better align with Chinese culture. The culture feels
-            incredibly nostalgic, and yet there is this distant but unshakable
-            feeling of alienation from mainland culture. I share this identity
-            struggle with many; it's difficult to be born halfway between two
-            cultures, not entirely one or the other. The best I can do is
-            embrace and celebrate the diversity of my unique heritage.
-          </p>
-          <p>
-            Much of my thinking, my mannerism, my identity is affected by my
-            cultural background; as such, my work is a reflection of my person.
+            This website was built as a testament to yin and yang--balance and
+            interconnectedness of opposites--which is a concept I hold close to
+            my heart. Much of my thinking, my mannerism, my identity is affected
+            by my Chinese-American cultural background; my work is a reflection
+            of my person.
           </p>
         </div>
       }

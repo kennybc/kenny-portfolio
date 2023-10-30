@@ -8,6 +8,7 @@
 .Page__Header {
   padding-top: 2vh;
   padding-bottom: 4vh;
+  color: #191919;
 }
 .Page__Title,
 .Page__Subtitle {
@@ -39,14 +40,14 @@
   --fade-direction: to top;
   font-family: "Sometype Mono", sans-serif;
   text-align: var(--yin);
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   padding-top: 0;
 }
 .Yang {
   --fade-direction: to bottom;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Lora", sans-serif;
   text-align: var(--yang);
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
   padding-bottom: 0;
 }
 .Yin ::selection {

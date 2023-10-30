@@ -3,12 +3,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 /*
  * scroll dimensions hook
  */
-function getScrollDimensions(ref) {
-  /*
-   * if it's already scrollable, there is an injected padding
-   * that adds to the height this padding needs to be ignored
-   *  when deciding whether or not to revoke scrollability
-   */
+/*function getScrollDimensions(ref) {
   let offset = 0;
   if (ref.classList.contains("PageContent--Scrollable")) {
     offset = ref.scrollHeight / 3;
@@ -17,7 +12,7 @@ function getScrollDimensions(ref) {
     clientHeight: ref.clientHeight,
     scrollHeight: ref.scrollHeight - offset,
   };
-}
+}*/
 export const useScrollDimensions = (ref) => {
   const [scrollDimensions, setScrollDimensions] = useState({
     clientHeight: 0,
