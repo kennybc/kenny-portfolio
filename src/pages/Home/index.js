@@ -1,4 +1,5 @@
 import Page from "components/Page";
+import URL from "components/URL";
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +10,7 @@ export default function Home() {
     <Page
       className="Home"
       title="Kenneth Chen"
-      subtitle="technologist, creative"
+      socials
       yang={
         <div>
           <p>
@@ -23,7 +24,8 @@ export default function Home() {
             spiritual and imaginative.
           </p>
           <p>
-            This website was built as a testament to yin and yang--balance and
+            This website was built as a testament to{" "}
+            <URL to="/yin-yang">yin and yang</URL>--balance and
             interconnectedness of opposites--which is a concept I hold close to
             my heart. Much of my thinking, my mannerism, my identity is affected
             by my Chinese-American cultural background; my work is a reflection

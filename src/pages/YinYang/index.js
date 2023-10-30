@@ -10,7 +10,13 @@ export default function YinYang() {
     <Page
       className="YinYang"
       title="Yin Yang"
-      subtitle="Philosophy, Translation"
+      tags={[
+        "#project",
+        <span>
+          #lake <b>☱</b>
+        </span>,
+        "#react",
+      ]}
       yang={
         <div>
           <h3>Philosophy</h3>
@@ -53,8 +59,9 @@ export default function YinYang() {
             that are associated with the elements: heaven ☰, lake ☱, fire ☲,
             thunder ☳, wind ☴, water ☵, mountain ☶, and earth ☷. Bigrams can
             then be stacked on top of each other for a total of 64 hexagrams,
-            each representing a specific divination theory. For the purpose of
-            my site, it makes sense to use the trigrams and omit fire and water.
+            each representing a specific divination theory. For the simpler
+            purpose of my site, it makes sense to use the trigrams and omit fire
+            and water.
           </p>
           <Image
             className="BaguaCycle"

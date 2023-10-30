@@ -1,13 +1,12 @@
 .Image {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: min-content;
 }
 .Image__Source {
   margin-bottom: 2vh;
-  width: 100%;
 }
 .Image__Caption {
   font-style: italic;
