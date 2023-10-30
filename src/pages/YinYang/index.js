@@ -117,7 +117,7 @@ export default function YinYang() {
             From bigrams comes the{" "}
             <URL to="https://en.wikipedia.org/wiki/Bagua" newTab>
               eight trigrams
-            </URL>
+            </URL>{" "}
             that are associated with the elements: heaven "☰", lake "☱", fire
             "☲", thunder "☳", windw "☴", water "☵", mountain "☶", and earth "☷".
             Bigrams can then be stacked on top of each other for a total of 64

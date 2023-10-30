@@ -1,4 +1,6 @@
 .Page {
+  --padding-y: 10vh;
+  --padding-x: 8vw;
   display: flex;
   flex-direction: var(--direction);
   justify-content: space-between;
@@ -26,8 +28,6 @@
  */
 .Yin,
 .Yang {
-  --padding-y: 15vh;
-  --padding-x: 8vw;
   position: relative;
   display: flex;
   flex-direction: column;
