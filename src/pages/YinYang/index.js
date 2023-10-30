@@ -62,13 +62,13 @@ export default function YinYang() {
             alt="The Bagua Trigram Cycle"
           />
           <p>
-            Considering the structure of a trigram, you can see that change
-            enters from the bottom. For example, as heaven transitions towards
-            earth, the first step is wind. This makes it possible to "tiebreak"
-            between numerically equivalent trigrams (e.g. mountain ☶ versus
-            thunder ☳) because we can see that, following a clockwise rotation,
-            mountain approaches earth while thunder approaches heaven, which
-            makes sense elementally as well.
+            Considering the structure of a trigram in the typical clockwise
+            cycle, you can see that change enters from the bottom. For example,
+            as heaven transitions towards earth, the first step is wind. This
+            makes it possible to "tiebreak" between numerically equivalent
+            trigrams (e.g. mountain ☶ versus thunder ☳) because we can see that,
+            following a clockwise rotation, mountain approaches earth while
+            thunder approaches heaven, which makes sense elementally as well.
           </p>
           <p>
             <b>Heaven ☰</b>

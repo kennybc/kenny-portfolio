@@ -1,13 +1,27 @@
-import Split from "components/Split";
 import { AnimatePresence } from "framer-motion";
 import { route2split } from "index.js";
-import { getSlantDimensions } from "utils/trig";
+import { getSlantDimensions, getSplitDimensions } from "utils/trig";
 import { useWindowDimensions } from "utils/window";
 
 import { useState } from "react";
 import { Routes, useLocation } from "react-router-dom";
 
 import "./styles.css";
+
+function Split() {
+  const splitDimensions = getSplitDimensions();
+
+  return (
+    <div
+      className="Split"
+      style={{
+        width: splitDimensions.width,
+        height: splitDimensions.height,
+        marginTop: splitDimensions.offset,
+      }}
+    ></div>
+  );
+}
 
 export default function Wrapper({ children }) {
   const location = useLocation();
