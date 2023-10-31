@@ -11,7 +11,7 @@ export default function Home() {
       className="Home"
       title="Kenneth Chen"
       yang={
-        <div>
+        <>
           <p>
             Hello and welcome. I'm Kenneth (Kenny) Chen, a technologist and a
             creative, and this is my portfolio.
@@ -30,7 +30,7 @@ export default function Home() {
             by my Chinese-American cultural background; my work is a reflection
             of my person.
           </p>
-        </div>
+        </>
       }
       yin={
         <div className="Home__Links">

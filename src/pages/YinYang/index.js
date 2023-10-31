@@ -18,7 +18,7 @@ export default function YinYang() {
         "#react",
       ]}
       yang={
-        <div>
+        <>
           <h3>Philosophy</h3>
           <p>
             Yin and yang originate from the{" "}
@@ -105,10 +105,10 @@ export default function YinYang() {
             <br />A highly imaginative and somewhat technical project with more
             imaginative potential.
           </p>
-        </div>
+        </>
       }
       yin={
-        <div>
+        <>
           <URL to="/"> Home </URL>
           <h3>Translation</h3>
           <p>
@@ -150,7 +150,7 @@ export default function YinYang() {
             Bigrams can then be stacked on top of each other for a total of 64
             hexagrams, each representing a specific divination theory.
           </p>
-        </div>
+        </>
       }
     />
   );

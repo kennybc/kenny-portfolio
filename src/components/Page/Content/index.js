@@ -9,10 +9,10 @@ export default function Content({ children }) {
   const dimensions = useScrollDimensions(ref);
   const scrollClass =
     dimensions.scrollHeight > dimensions.clientHeight
-      ? " PageContent--Scrollable"
+      ? " Page__Content--Scrollable"
       : "";
   return (
-    <div className={"PageContent" + scrollClass} ref={ref}>
+    <div className={"Page__Content" + scrollClass} ref={ref}>
       {children}
     </div>
   );
