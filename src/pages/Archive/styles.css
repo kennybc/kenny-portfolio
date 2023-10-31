@@ -1,0 +1,27 @@
+.SkyblockYouTube {
+  width: 26vmax;
+  height: 14.625vmax;
+  margin-top: 5vh;
+}
+
+.MotorDebate {
+  margin: 5vh 0;
+}
+.MotorDebate .Image__Source {
+  width: 26vw;
+}
+
+#demo-1 {
+  background: white;
+  color: black;
+  padding: 30px 60px;
+  width: 100%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 5vh 0;
+}
+#demo-2 {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
