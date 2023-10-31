@@ -1,30 +1,38 @@
+import { PageContext } from "components/Wrapper";
 import { motion } from "framer-motion";
 import routeVariants from "pages/routeVariants";
 
+import { useContext } from "react";
 import { ImGithub, ImLinkedin2, ImUserTie } from "react-icons/im";
 
-import PageContent from "./PageContent";
+import Content from "./Content";
 import "./styles.css";
 
 const icons = [
   {
     icon: <ImUserTie />,
-    url: "test.com",
+    url: "resume.com",
   },
   {
     icon: <ImLinkedin2 />,
-    url: "test2.com",
+    url: "linkedin.com",
   },
   {
     icon: <ImGithub />,
-    url: "test2.com",
+    url: "github.com",
   },
 ];
 
-export default function Page({ className, title, tags, socials, yin, yang }) {
+export default function Page({ className, title, tags, yin, yang }) {
+  const context = useContext(PageContext);
+  tags = context.reverse ? tags.toReversed() : tags;
   return (
     <motion.div
-      className={"Page " + (className ?? "")}
+      className={
+        "Page" +
+        (context.reverse ? " Page--Reverse" : "") +
+        (" " + className ?? "")
+      }
       variants={routeVariants}
       initial="initial"
       animate="animate"
@@ -34,24 +42,22 @@ export default function Page({ className, title, tags, socials, yin, yang }) {
         <div className="Yin__Lesser"></div>
         <div className="Page__Header">
           <h1 className="Page__Title">{title}</h1>
-          {(tags || socials) && (
-            <div className="Page__Tags">
-              {tags &&
-                tags.map(function (tag) {
-                  return <div className="Page__Tag">{tag}</div>;
-                })}
-              {socials &&
-                icons.map(function (icon) {
-                  return <div className="Page__Tag">{icon.icon}</div>;
-                })}
-            </div>
-          )}
+          <div className="Page__Tags">
+            {tags &&
+              tags.map(function (tag) {
+                return <div className="Page__Tag">{tag}</div>;
+              })}
+            {!tags &&
+              icons.map(function (icon) {
+                return <div className="Page__Tag">{icon.icon}</div>;
+              })}
+          </div>
         </div>
-        <PageContent>{yang}</PageContent>
+        <Content>{yang}</Content>
       </div>
       <div className="Yin">
         <div className="Yang__Lesser"></div>
-        <PageContent>{yin}</PageContent>
+        <Content>{yin}</Content>
       </div>
     </motion.div>
   );

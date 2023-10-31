@@ -3,10 +3,12 @@ import { route2split } from "index.js";
 import { getSlantDimensions, getSplitDimensions } from "utils/trig";
 import { useWindowDimensions } from "utils/window";
 
-import { useState } from "react";
+import { createContext, useState } from "react";
 import { Routes, useLocation } from "react-router-dom";
 
 import "./styles.css";
+
+export const PageContext = createContext();
 
 function Split({ theta }) {
   const splitDimensions = getSplitDimensions();
@@ -32,26 +34,31 @@ export default function Wrapper({ children }) {
     windowDimensions.width > windowDimensions.height ? "Landscape" : "Portrait";
 
   const slantDimensions = getSlantDimensions(split, orientation);
+  const context = {
+    reverse: slantDimensions.reverse,
+  };
 
   return (
-    <div
-      className={
-        "Wrapper " + (slantDimensions.reverse ? "Wrapper--Reverse" : "")
-      }
-      style={{
-        "--slant-width": `${slantDimensions.width}vh`,
-      }}
-    >
-      <AnimatePresence
-        mode="wait"
-        initial={false}
-        onExitComplete={() => setSplit(route2split[location.pathname])}
+    <PageContext.Provider value={context}>
+      <div
+        className={
+          "Wrapper " + (slantDimensions.reverse ? "Wrapper--Reverse" : "")
+        }
+        style={{
+          "--slant-width": `${slantDimensions.width}vh`,
+        }}
       >
-        <Routes location={location} key={location.pathname}>
-          {children}
-        </Routes>
-      </AnimatePresence>
-      <Split theta={slantDimensions.theta} />
-    </div>
+        <AnimatePresence
+          mode="wait"
+          initial={false}
+          onExitComplete={() => setSplit(route2split[location.pathname])}
+        >
+          <Routes location={location} key={location.pathname}>
+            {children}
+          </Routes>
+        </AnimatePresence>
+        <Split theta={slantDimensions.theta} />
+      </div>
+    </PageContext.Provider>
   );
 }

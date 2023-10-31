@@ -8,15 +8,7 @@
   transition: rotate 0.7s ease;
 }
 .Wrapper {
-  --direction: row;
-  --yin: right;
-  --yang: left;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-.Wrapper--Reverse {
-  --direction: row-reverse;
-  --yin: left;
-  --yang: right;
 }

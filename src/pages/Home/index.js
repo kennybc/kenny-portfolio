@@ -10,7 +10,6 @@ export default function Home() {
     <Page
       className="Home"
       title="Kenneth Chen"
-      socials
       yang={
         <div>
           <p>

@@ -1,9 +1,17 @@
 .Page {
   --padding-y: 10vh;
   --padding-x: 8vw;
+  --direction: row;
+  --yin: right;
+  --yang: left;
   display: flex;
   flex-direction: var(--direction);
   justify-content: space-between;
+}
+.Page--Reverse {
+  --direction: row-reverse;
+  --yin: left;
+  --yang: right;
 }
 .Page__Header {
   padding-top: 2vh;
