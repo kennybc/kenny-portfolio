@@ -44,12 +44,20 @@ export default function Page({ className, title, tags, yin, yang }) {
           <h1 className="Page__Title">{title}</h1>
           <div className="Page__Tags">
             {tags &&
-              tags.map(function (tag) {
-                return <div className="Page__Tag">{tag}</div>;
+              tags.map(function (tag, i) {
+                return (
+                  <div key={i} className="Page__Tag">
+                    {tag}
+                  </div>
+                );
               })}
             {!tags &&
-              icons.map(function (icon) {
-                return <div className="Page__Tag">{icon.icon}</div>;
+              icons.map(function (icon, i) {
+                return (
+                  <div key={i} className="Page__Tag">
+                    {icon.icon}
+                  </div>
+                );
               })}
           </div>
         </div>
