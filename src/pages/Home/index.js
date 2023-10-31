@@ -27,8 +27,8 @@ export default function Home() {
             <URL to="/yin-yang">yin and yang</URL>--balance and
             interconnectedness of opposites--which is a concept I hold close to
             my heart. Much of my thinking, my mannerism, my identity is affected
-            by my Chinese-American cultural background; my work is a reflection
-            of my person.
+            by my Chinese-American cultural background; thus my work is often
+            reflective of my person.
           </p>
         </>
       }

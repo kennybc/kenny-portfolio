@@ -2,7 +2,6 @@
   position: relative;
   display: inline-flex;
   color: inherit;
-  background: rgba(127, 127, 127, 0.3);
   text-decoration: none;
   margin: 0 0.1rem;
   padding: 0 0.5rem;
@@ -12,10 +11,19 @@
   line-height: normal;
   vertical-align: text-bottom;
 }
+.Yang .URL {
+  background: rgba(0, 0, 0, 0.1);
+}
+.Yin .URL {
+  background: rgba(255, 255, 255, 0.25);
+}
+.Yang .URL:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+.Yin .URL:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
 .URL svg {
   margin-right: 0.5rem;
   opacity: 0.5;
-}
-.URL:hover {
-  background: rgba(127, 127, 127, 0.4);
 }

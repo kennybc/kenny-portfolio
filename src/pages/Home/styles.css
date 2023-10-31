@@ -1,6 +1,7 @@
 .Home .Yin .Page__Content {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
   height: 100%;
 }
 .Home__Links {

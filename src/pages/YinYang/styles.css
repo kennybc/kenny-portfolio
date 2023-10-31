@@ -1,6 +1,22 @@
 .BaguaCycle {
   margin: 5vh 0;
 }
-.BaguaCycle img {
+.Image img {
   width: 15vmax;
+}
+
+.TrigramLabel {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 10vmax;
+  margin-left: 0.5vmax;
+}
+
+.SharpAngle {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  margin-right: 1vw;
+}
+.DullAngle {
+  margin-bottom: 5vh;
 }

@@ -7,6 +7,9 @@
 .Page__Content::-webkit-scrollbar {
   display: none;
 }
+.Page__Content h3 {
+  padding-top: 10vh;
+}
 
 .Page__Content--Scrollable {
   mask: linear-gradient(
@@ -30,7 +33,7 @@
   opacity: 0.5;
 }
 .Yang .Page__Content--Scrollable:after,
-.Yin .Page__Content--Scrollable:before {
+.Yin .Page__Content:before {
   content: "";
   display: block;
   width: 100%;
