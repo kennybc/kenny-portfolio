@@ -82,29 +82,31 @@ export default function YinYang() {
             following a clockwise rotation, mountain approaches earth while
             thunder approaches heaven, which makes sense elementally as well.
           </p>
-          <p className="TrigramLabel">
-            <b>Heaven ☰</b>A purely imaginative project; a thought experiment.
-          </p>
-          <p className="TrigramLabel">
-            <b>Wind ☴</b>A somewhat technical and highly imaginative project
-            with more technical potential.
-          </p>
-          <p className="TrigramLabel">
-            <b>Mountain ☶</b>A highly technical and somewhat imaginative project
-            with more technical potential.
-          </p>
-          <p className="TrigramLabel">
-            <b>Earth ☰</b>A purely technical project: virtually no creative
-            direction.
-          </p>
-          <p className="TrigramLabel">
-            <b>Thunder ☳</b>A somewhat imaginative and highly technical project
-            with more imaginative potential.
-          </p>
-          <p className="TrigramLabel">
-            <b>Lake ☱</b>A highly imaginative and somewhat technical project
-            with more imaginative potential.
-          </p>
+          <div className="TrigramCaptions">
+            <p>
+              <b>Heaven ☰</b>A purely imaginative project; a thought experiment.
+            </p>
+            <p>
+              <b>Wind ☴</b>A somewhat technical and highly imaginative project
+              with more technical potential.
+            </p>
+            <p>
+              <b>Mountain ☶</b>A highly technical and somewhat imaginative
+              project with more technical potential.
+            </p>
+            <p>
+              <b>Earth ☰</b>A purely technical project: virtually no creative
+              direction.
+            </p>
+            <p>
+              <b>Thunder ☳</b>A somewhat imaginative and highly technical
+              project with more imaginative potential.
+            </p>
+            <p>
+              <b>Lake ☱</b>A highly imaginative and somewhat technical project
+              with more imaginative potential.
+            </p>
+          </div>
           <h3>Further Reading</h3>
           <p>
             This is a grossly simplified explanation of the concepts behind my

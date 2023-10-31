@@ -5,11 +5,19 @@
   width: 15vmax;
 }
 
-.TrigramLabel {
+.TrigramCaptions {
   display: inline-flex;
+  flex-direction: var(--direction);
+  flex-wrap: wrap;
+  gap: 0.5vmax;
+}
+.TrigramCaptions p {
+  display: flex;
   flex-direction: column;
-  max-width: 10vmax;
-  margin-left: 0.5vmax;
+  width: 10vw;
+  min-width: 100px;
+  flex-grow: 2;
+  font-size: clamp(0.6rem, 0.9vmax, 0.9rem);
 }
 
 .SharpAngle {

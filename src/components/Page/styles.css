@@ -73,11 +73,11 @@
   padding-bottom: 0;
 }
 .Yin ::selection {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(221, 221, 221);
   color: black;
 }
 .Yang ::selection {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(49, 49, 49);
   color: white;
 }
 /*
