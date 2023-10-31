@@ -2,14 +2,12 @@
   position: fixed;
   top: 0;
   left: 50vw;
-  transform: rotate(var(--theta));
   transform-origin: 0 50%;
   backdrop-filter: invert(100%) brightness(110%);
   z-index: -1;
-  transition: transform 0.7s ease;
+  transition: rotate 0.7s ease;
 }
 .Wrapper {
-  --theta: 0deg;
   --direction: row;
   --yin: right;
   --yang: left;

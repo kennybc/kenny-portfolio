@@ -8,7 +8,7 @@ import { Routes, useLocation } from "react-router-dom";
 
 import "./styles.css";
 
-function Split() {
+function Split({ theta }) {
   const splitDimensions = getSplitDimensions();
 
   return (
@@ -18,6 +18,7 @@ function Split() {
         width: splitDimensions.width,
         height: splitDimensions.height,
         marginTop: splitDimensions.offset,
+        rotate: `${theta}deg`,
       }}
     ></div>
   );
@@ -38,7 +39,6 @@ export default function Wrapper({ children }) {
         "Wrapper " + (slantDimensions.reverse ? "Wrapper--Reverse" : "")
       }
       style={{
-        "--theta": `${slantDimensions.theta}deg`,
         "--slant-width": `${slantDimensions.width}vh`,
       }}
     >
@@ -51,7 +51,7 @@ export default function Wrapper({ children }) {
           {children}
         </Routes>
       </AnimatePresence>
-      <Split split={split} orientation={orientation} />
+      <Split theta={slantDimensions.theta} />
     </div>
   );
 }

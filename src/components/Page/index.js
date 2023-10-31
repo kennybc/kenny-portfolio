@@ -1,26 +1,22 @@
 import { motion } from "framer-motion";
 import routeVariants from "pages/routeVariants";
 
-import { FiFile, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { ImGithub, ImLinkedin2, ImUserTie } from "react-icons/im";
 
 import PageContent from "./PageContent";
 import "./styles.css";
 
 const icons = [
   {
-    icon: <FiFile />,
+    icon: <ImUserTie />,
     url: "test.com",
   },
   {
-    icon: <FiLinkedin />,
+    icon: <ImLinkedin2 />,
     url: "test2.com",
   },
   {
-    icon: <FiGithub />,
-    url: "test2.com",
-  },
-  {
-    icon: <FiMail />,
+    icon: <ImGithub />,
     url: "test2.com",
   },
 ];
