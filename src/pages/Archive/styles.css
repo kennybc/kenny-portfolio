@@ -19,6 +19,7 @@
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   margin: 5vh 0;
+  border-radius: 5px;
 }
 #demo-2 {
   width: 100%;

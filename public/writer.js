@@ -642,9 +642,9 @@ class Block {
     this.el.classList.add("w-block");
     this.add(this.type, focusOnAdd);
   }
-  add(type, focusOnAdd) {
+  add(type, focusOnAdd = true) {
     this.options = ["align"];
-    this.el.classList.add("w-block--focused");
+    if (focusOnAdd) this.el.classList.add("w-block--focused");
     this.node = this.el.appendChild(document.createElement("div"));
     this.node.className = "w-block__" + type;
     this.node.contentEditable = true;
