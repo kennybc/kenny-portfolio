@@ -25,7 +25,7 @@ export default function Archive() {
       ]}
       yang={
         <>
-          <h3 style={{ paddingTop: 0 }}>Timeline</h3>
+          <h3 style={{ paddingTop: 0 }}>Background</h3>
           <p>
             I started programming in 2nd grade: learning{" "}
             <URL
@@ -39,38 +39,9 @@ export default function Archive() {
             payout.
           </p>
           <p>
-            That account was eventually closed 🙃 when I attempted link my own
-            bank account. In the time I was active, I had completed a number of
-            projects: anything from small niche-use scripts to a landing page
-            for an investment banking firm.
-          </p>
-          <p>
-            Ironically, once old enough to "legally" use freelancer, I had
-            become disinterested in that form of short-term fulfillment. My
-            projects began to lean towards personal hobbies and interests.
-          </p>
-          <p>
-            I've condensed this period of my life into a brief recap that
-            highlights some notable past works and may offer some insight into
-            my personality (in no particular order).
-          </p>
-          <h3>Growth</h3>
-          <p>
-            Something I used to pride myself on was how personalized all of my
-            work was: not that it was evident of my personality, but that
-            everything was handmade and custom. While this did help me develop a
-            strong sense of basics, it would eventually hold me back. Namely, I
-            viewed using libraries to automate/simplify tasks as "cheating."
-          </p>
-          <p>
-            I've only recently overcome this mindset, and have noticed much more
-            mental capacity for creative thinking, undoubtedly recovered from
-            slaving over menial tasks.
-          </p>
-          <p>
-            Coming out of this phase with solid fundamentals has allowed me to
-            pursue more intricate and creative ideas without getting as bogged
-            down by implementational setbacks.
+            It's through these past projects that I've learned how to program on
+            my own. I've cherrypicked some of my favorites (in no particular
+            order) that I find notable or fun/interesting.
           </p>
         </>
       }
@@ -92,9 +63,9 @@ export default function Archive() {
           />
           <p>
             Also featured a user account system with robust web security
-            features. All implemented using OOP concepts in PHP which was a
-            first for me (PHP was taught procedurally when I learned it). All in
-            all, very educational, especially understanding the structure of a
+            features; Implemented using OOP concepts in PHP which was a first
+            for me (PHP was taught procedurally when I learned it). All in all,
+            very educational, especially understanding the structure of a
             full-stack project.
           </p>
           <h3>WriterJS</h3>

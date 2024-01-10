@@ -13,14 +13,14 @@ export default function Home() {
       yang={
         <>
           <p>
-            Hello and welcome. I'm Kenneth (Kenny) Chen, a technologist and a
-            creative, and this is my portfolio.
+            Hello! I'm Kenneth (Kenny) Chen, a technologist and a creative, and
+            this is my portfolio.
           </p>
           <p>
             I'm currently an undergraduate computer science student at
-            Northeastern University with a concentration in software. Beyond my
-            studies in the logical and concrete, I find passion in the arts: the
-            spiritual and imaginative.
+            Northeastern University with a concentration in software. I also
+            have passion for the arts to supplement my studies in logic and
+            computing.
           </p>
           <p>
             This website was built as a testament to{" "}

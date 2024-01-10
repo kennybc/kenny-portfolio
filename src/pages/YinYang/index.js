@@ -64,9 +64,12 @@ export default function YinYang() {
             <URL to="https://en.wikipedia.org/wiki/Hexagram_(I_Ching)" newTab>
               64 hexagrams
             </URL>
-            , each representing a specific divination theory. For the simpler
-            purpose of my site, it makes sense to use the trigrams and omit fire
-            and water.
+            , each representing a specific divination theory.
+          </p>
+          <p>
+            For my portfolio, I've chosen to use trigrams but omit fire and
+            water; I find the 6 trigrams are simple enough to convey my thoughts
+            clearly yet complex enough to provide sufficient detail.
           </p>
           <Image
             className="BaguaCycle"
@@ -80,7 +83,7 @@ export default function YinYang() {
             makes it possible to "tiebreak" between numerically equivalent
             trigrams (e.g. mountain ☶ versus thunder ☳) because we can see that,
             following a clockwise rotation, mountain approaches earth while
-            thunder approaches heaven, which makes sense elementally as well.
+            thunder approaches heaven, which makes also makes sense elementally.
           </p>
           <div className="TrigramCaptions">
             <p>
@@ -109,11 +112,11 @@ export default function YinYang() {
           </div>
           <h3>Further Reading</h3>
           <p>
-            This is a grossly simplified explanation of the concepts behind my
-            design choices; I've stripped the philosophy down to its
+            This has been a highly simplified explanation of the concepts behind
+            my design choices; I've stripped the philosophy down to its
             fundamentals in order to most clearly communicate my thought
-            process. Yin and yang are, in truth, very complex concepts with
-            limitless translations and applications.
+            process. Yin and yang are truly very complex concepts with limitless
+            translations and applications.
           </p>
           <p>
             I would strongly encourage anyone interested in divination,
@@ -126,11 +129,11 @@ export default function YinYang() {
       yin={
         <>
           <URL to="/"> Home </URL>
-          <h3 style={{ paddingTop: "0" }}>Structure</h3>
+          <h3 style={{ paddingTop: "0" }}>Stack</h3>
           <p>
-            This project--kenny.us--was created with React (my first React
-            project!) for efficient rendering and a smoother user experience. My
-            last portfolio site was also a SPA (single page application) but
+            This project--kenny.us--was created with React (my very first React
+            project) for efficient rendering and a smoother user experience. My
+            old portfolio site was also a SPA (single page application) but
             created from scratch with dynamic content serving via AJAX requests
             and was much slower loading.
           </p>
@@ -150,10 +153,10 @@ export default function YinYang() {
             such: ☯ with yang at the bottom, then it is yang dominated.
           </p>
           <p>
-            This proved to be impractical in a web rendering which would split
-            the viewport down the middle horizontally to represent a "heaven" or
-            "earth" project. Instead, the render is "left heavy" in landscape
-            mode while portrait mode is "top heavy."
+            This proved to be impractical in a web rendering as it would create
+            sharp angles in which text could not be displayed, as well as a
+            generally worse flow of content. Instead, the render is "left heavy"
+            in landscape mode while portrait mode is "top heavy."
           </p>
           <Image
             className="SharpAngle"
@@ -169,12 +172,10 @@ export default function YinYang() {
           />
           <p>
             The angle of the split was also dulled drastically for better text
-            visibility. Originally, to represent a trigram, I divided the heavy
-            half into equal thirds to represent the three stages of transition.
-            The combination of a nonstandard heavy-side orientation and dulled
-            angle results in much more space for content at the cost of being
-            mathematically inaccurate. The hope is that the idea is still
-            retained with this compromise.
+            layout. Originally, to represent a trigram, I divided the heavy half
+            into equal thirds to represent the three stages of transition. The
+            combination of a nonstandard heavy-side orientation and dulled angle
+            results in much more space for content.
           </p>
           <h3>Typography</h3>
           <p>
