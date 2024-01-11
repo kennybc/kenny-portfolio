@@ -36,6 +36,7 @@ export default function Wrapper({ children }) {
   const slantDimensions = getSlantDimensions(split, orientation);
   const context = {
     reverse: slantDimensions.reverse,
+    orientation: orientation,
   };
 
   return (

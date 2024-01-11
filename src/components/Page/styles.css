@@ -1,21 +1,31 @@
 .Page {
-  --padding-y: 10vh;
-  --padding-x: 8vw;
+  --padding-y: 10vmin;
+  --padding-x: 8vmin;
   --direction: row;
+  --tag-direction: row;
   --yin: right;
   --yang: left;
   display: flex;
   flex-direction: var(--direction);
   justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
 }
 .Page--Reverse {
+  --tag-direction: row-reverse;
   --direction: row-reverse;
   --yin: left;
   --yang: right;
 }
+.Page--Portrait {
+  --direction: column;
+}
+.Page--Portrait.Page--Reverse {
+  --direction: column-reverse;
+}
 .Page__Header {
-  padding-top: 2vh;
-  padding-bottom: 4vh;
+  padding-top: 2vmin;
+  padding-bottom: 4vmin;
   color: #191919;
 }
 .Page__Title,
@@ -37,6 +47,11 @@
   height: 100vh;
   width: calc(50% - var(--slant-width));
   padding: var(--padding-y) var(--padding-x) var(--padding-y) var(--padding-x);
+}
+.Page--Portrait .Yin,
+.Page--Portrait .Yang {
+  height: calc(50vh - var(--slant-width));
+  width: 100vw;
 }
 .Yin {
   --fade-direction: to top;

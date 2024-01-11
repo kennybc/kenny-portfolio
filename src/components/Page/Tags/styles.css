@@ -1,6 +1,6 @@
 .Page__Tags {
   display: inline-flex;
-  flex-direction: var(--direction);
+  flex-direction: var(--tag-direction);
   flex-wrap: wrap;
   gap: 0.5vw;
 }

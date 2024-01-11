@@ -8,7 +8,7 @@
   display: none;
 }
 .Page__Content h3 {
-  padding-top: 10vh;
+  padding-top: 10vmin;
 }
 
 .Page__Content--Scrollable {

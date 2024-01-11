@@ -14,7 +14,11 @@ export default function Page({ className, title, tags, yin, yang }) {
   return (
     <motion.div
       className={
-        "Page" + (context.reverse ? " Page--Reverse" : "") + (" " + className)
+        "Page Page--" +
+        context.orientation +
+        (context.reverse ? " Page--Reverse" : "") +
+        " " +
+        className
       }
       variants={routeVariants}
       initial="initial"
