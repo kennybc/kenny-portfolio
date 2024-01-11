@@ -1,7 +1,7 @@
-import MotorDebate from "assets/motordebate/tile-2b.png";
-import Image from "components/Image";
-import Page from "components/Page";
-import URL from "components/URL";
+import MotorDebate from "src/assets/motordebate/tile-2b.png";
+import Image from "src/components/Image";
+import Page from "src/components/Page";
+import URL from "src/components/URL";
 
 import { useEffect } from "react";
 

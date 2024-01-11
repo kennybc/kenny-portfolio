@@ -1,9 +1,9 @@
-import BaguaCycle from "assets/Picture1.svg";
-import DullAngle from "assets/YinYang/dull.svg";
-import SharpAngle from "assets/YinYang/sharp.svg";
-import Image from "components/Image";
-import Page from "components/Page";
-import URL from "components/URL";
+import BaguaCycle from "src/assets/Picture1.svg";
+import DullAngle from "src/assets/YinYang/dull.svg";
+import SharpAngle from "src/assets/YinYang/sharp.svg";
+import Image from "src/components/Image";
+import Page from "src/components/Page";
+import URL from "src/components/URL";
 
 import "./styles.css";
 

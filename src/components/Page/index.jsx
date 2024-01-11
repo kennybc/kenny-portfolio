@@ -1,6 +1,6 @@
-import { PageContext } from "components/Wrapper";
 import { motion } from "framer-motion";
-import routeVariants from "pages/routeVariants";
+import { PageContext } from "src/components/Wrapper";
+import routeVariants from "src/pages/routeVariants.js";
 
 import { useContext } from "react";
 
@@ -14,9 +14,7 @@ export default function Page({ className, title, tags, yin, yang }) {
   return (
     <motion.div
       className={
-        "Page" +
-        (context.reverse ? " Page--Reverse" : "") +
-        (" " + className ?? "")
+        "Page" + (context.reverse ? " Page--Reverse" : "") + (" " + className)
       }
       variants={routeVariants}
       initial="initial"

@@ -1,4 +1,4 @@
-import { useScrollDimensions } from "utils/window";
+import { useScrollDimensions } from "src/utils/window";
 
 import { useRef } from "react";
 

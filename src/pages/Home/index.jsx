@@ -1,5 +1,5 @@
-import Page from "components/Page";
-import URL from "components/URL";
+import Page from "src/components/Page";
+import URL from "src/components/URL";
 
 import { Link } from "react-router-dom";
 

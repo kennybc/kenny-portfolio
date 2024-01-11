@@ -1,7 +1,7 @@
 import { AnimatePresence } from "framer-motion";
-import { route2split } from "index.js";
-import { getSlantDimensions, getSplitDimensions } from "utils/trig";
-import { useWindowDimensions } from "utils/window";
+import { route2split } from "src/index.jsx";
+import { getSlantDimensions, getSplitDimensions } from "src/utils/trig.js";
+import { useWindowDimensions } from "src/utils/window.js";
 
 import { createContext, useState } from "react";
 import { Routes, useLocation } from "react-router-dom";

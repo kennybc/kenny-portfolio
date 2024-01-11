@@ -1,5 +1,5 @@
-import Wrapper from "components/Wrapper";
-import * as Pages from "pages";
+import Wrapper from "src/components/Wrapper/index.jsx";
+import * as Pages from "src/pages";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
