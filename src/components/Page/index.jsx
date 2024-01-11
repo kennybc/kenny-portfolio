@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { PageContext } from "src/components/Wrapper";
-import routeVariants from "src/pages/routeVariants.js";
+import routeVariants from "src/utils/routeVariants.js";
 
 import { useContext } from "react";
 

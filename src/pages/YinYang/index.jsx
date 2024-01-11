@@ -1,6 +1,7 @@
 import BaguaCycle from "src/assets/Picture1.svg";
 import DullAngle from "src/assets/YinYang/dull.svg";
 import SharpAngle from "src/assets/YinYang/sharp.svg";
+import ShellSlant from "src/assets/shell-slant.png";
 import Image from "src/components/Image";
 import Page from "src/components/Page";
 import URL from "src/components/URL";
@@ -24,7 +25,7 @@ export default function YinYang() {
           <h3 style={{ paddingTop: 0 }}>Philosophy</h3>
           <p>
             Yin and yang originate from the{" "}
-            <URL to="https://en.wikipedia.org/wiki/Yin_and_yang" newTab>
+            <URL to="https://en.wikipedia.org/wiki/I_Ching" newTab>
               I Ching (Yi Jing)
             </URL>
             , which is considered to be one of the oldest Chinese texts
@@ -131,11 +132,10 @@ export default function YinYang() {
           <URL to="/"> Home </URL>
           <h3 style={{ paddingTop: "0" }}>Stack</h3>
           <p>
-            This project--kenny.us--was created with React (my very first React
-            project) for efficient rendering and a smoother user experience. My
-            old portfolio site was also a SPA (single page application) but
-            created from scratch with dynamic content serving via AJAX requests
-            and was much slower loading.
+            This project--kenny.us--was created with React and Vite for
+            efficient rendering and a smoother user experience. It was
+            originally written with Create React App and later migrated to Vite
+            for better to-date support and faster bundling.
           </p>
           <p>
             Other tools used include Framer's motion library for page
@@ -172,10 +172,20 @@ export default function YinYang() {
           />
           <p>
             The angle of the split was also dulled drastically for better text
-            layout. Originally, to represent a trigram, I divided the heavy half
-            into equal thirds to represent the three stages of transition. The
-            combination of a nonstandard heavy-side orientation and dulled angle
-            results in much more space for content.
+            layout. Originally, to represent a trigram, the heavy half was
+            divided into equal thirds to represent the three stages of
+            transition.
+          </p>
+          <Image
+            className="ShellSlant"
+            src={ShellSlant}
+            alt="Loading Progress Bar in Shell"
+            caption="Shell Progress Bar"
+          />
+          <p>
+            The dulled angle of the split was also modeled after the progress
+            bar commonly seen in the shell when working on projects that involve
+            some consuming tasks.
           </p>
           <h3>Typography</h3>
           <p>
