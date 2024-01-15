@@ -129,7 +129,6 @@ export default function YinYang() {
       }
       yin={
         <>
-          <URL to="/"> Home </URL>
           <h3 style={{ paddingTop: "0" }}>Stack</h3>
           <p>
             This project--kenny.us--was created with React and Vite for

@@ -35,6 +35,7 @@ export default function Wrapper({ children }) {
 
   const slantDimensions = getSlantDimensions(split, orientation);
   const context = {
+    split: split,
     reverse: slantDimensions.reverse,
     orientation: orientation,
   };
@@ -58,7 +59,9 @@ export default function Wrapper({ children }) {
             {children}
           </Routes>
         </AnimatePresence>
-        <Split theta={slantDimensions.theta} />
+        {orientation == "Landscape" ? (
+          <Split theta={slantDimensions.theta} />
+        ) : null}
       </div>
     </PageContext.Provider>
   );

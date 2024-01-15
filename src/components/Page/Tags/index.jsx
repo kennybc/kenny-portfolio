@@ -3,27 +3,36 @@ import { Link } from "react-router-dom";
 
 import "./styles.css";
 
-const icons = [
+const socials = [
   {
     icon: <ImUserTie />,
     url: "https://www.google.com/",
+    label: "View my resume",
   },
   {
     icon: <ImLinkedin2 />,
     url: "https://www.linkedin.com/in/kennybc/",
+    label: "View my LinkedIn profile",
   },
   {
     icon: <ImGithub />,
     url: "https://github.com/kennybc",
+    label: "View my Github profile",
   },
 ];
 
 export function Socials({ reverse }) {
-  return (reverse ? icons.toReversed() : icons).map(function (icon, i) {
+  return (reverse ? socials.toReversed() : socials).map(function (social, i) {
     return (
-      <Link to={icon.url} target="_blank" rel="noopener noreferrer">
+      <Link
+        key={i}
+        to={social.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={social.label}
+      >
         <div key={i} className="Page__Tag Page__Social">
-          {icon.icon}
+          {social.icon}
         </div>
       </Link>
     );

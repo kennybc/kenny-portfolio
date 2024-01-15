@@ -17,7 +17,6 @@ body {
   background-blend-mode: darken;
   background-size: calc(max(100%, 1000px));
   background-position: center;
-  overflow: hidden;
 }
 h1,
 h2,

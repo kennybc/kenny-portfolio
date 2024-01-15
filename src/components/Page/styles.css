@@ -1,6 +1,6 @@
 .Page {
   --padding-y: 10vmin;
-  --padding-x: 8vmin;
+  --padding-x: 12vmin;
   --direction: row;
   --tag-direction: row;
   --yin: right;
@@ -10,18 +10,13 @@
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .Page--Reverse {
   --tag-direction: row-reverse;
   --direction: row-reverse;
   --yin: left;
   --yang: right;
-}
-.Page--Portrait {
-  --direction: column;
-}
-.Page--Portrait.Page--Reverse {
-  --direction: column-reverse;
 }
 .Page__Header {
   padding-top: 2vmin;
@@ -35,7 +30,9 @@
 .Page__Title {
   width: 100%;
   text-transform: uppercase;
+  margin-top: 20px;
 }
+
 /*
  * "Greater yin/yang" half-page section containers
  */
@@ -46,12 +43,7 @@
   flex-direction: column;
   height: 100vh;
   width: calc(50% - var(--slant-width));
-  padding: var(--padding-y) var(--padding-x) var(--padding-y) var(--padding-x);
-}
-.Page--Portrait .Yin,
-.Page--Portrait .Yang {
-  height: calc(50vh - var(--slant-width));
-  width: 100vw;
+  padding: var(--padding-y) var(--padding-x);
 }
 .Yin {
   --fade-direction: to top;
@@ -93,19 +85,40 @@
   top: var(--padding-y);
   left: var(--padding-x);
 }
-.Yin__Lesser:before,
-.Yang__Lesser:before {
+.Yin__Lesser:after,
+.Yang__Lesser:after {
   content: "";
   position: relative;
   height: 100%;
   width: 50%;
   display: block;
 }
-.Yin__Lesser:before {
+.Yin__Lesser:after {
   background: rgba(0, 0, 0, 0.3);
   float: var(--yang);
+  margin: 0 2vmax;
 }
-.Yang__Lesser:before {
+.Yang__Lesser:after {
   background: rgba(255, 255, 255, 0.3);
   float: var(--yin);
+}
+.Yang .Hamburger {
+  float: var(--yang);
+}
+
+/*
+ * Portrait mode layout
+ */
+.Page--Portrait {
+  --direction: column;
+  height: auto;
+  overflow: scroll;
+}
+.Page--Portrait .Yin,
+.Page--Portrait .Yang {
+  height: auto;
+  width: 100vw;
+}
+.Page--Portrait .Yang {
+  background: white;
 }

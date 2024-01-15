@@ -3,6 +3,7 @@
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding-bottom: 2vmin;
 }
 .Page__Content::-webkit-scrollbar {
   display: none;
@@ -20,6 +21,9 @@
       rgba(0, 0, 0, 0) 100%
     )
     0 0 / 100% 100%;
+}
+.Page--Portrait .Yang .Page__Content {
+  padding-bottom: var(--padding-y);
 }
 /*
  * Empty padding space inserted at the ends of content

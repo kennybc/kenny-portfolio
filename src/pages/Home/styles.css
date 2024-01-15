@@ -23,3 +23,10 @@
 .Home .Yin a:hover {
   opacity: 0.9;
 }
+
+.Home .Hamburger {
+  display: none;
+}
+.Home .Yin__Lesser:after {
+  margin: 0;
+}

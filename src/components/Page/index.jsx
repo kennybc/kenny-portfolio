@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import Hamburger from "src/components/Hamburger";
+import Content from "src/components/Page/Content";
+import { Socials, Tags } from "src/components/Page/Tags";
 import { PageContext } from "src/components/Wrapper";
 import routeVariants from "src/utils/routeVariants.js";
 
 import { useContext } from "react";
 
-import Content from "./Content";
-import { Socials, Tags } from "./Tags";
 import "./styles.css";
 
 export default function Page({ className, title, tags, yin, yang }) {
@@ -26,7 +27,9 @@ export default function Page({ className, title, tags, yin, yang }) {
       exit="exit"
     >
       <div className="Yang">
-        <div className="Yin__Lesser"></div>
+        <div className="Yin__Lesser">
+          <Hamburger split={context.split} />
+        </div>
         <div className="Page__Header">
           <h1 className="Page__Title">{title}</h1>
           <div className="Page__Tags">

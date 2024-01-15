@@ -1,12 +1,19 @@
 .Image {
   display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 500px;
+}
+.Image__Wrapper {
+  display: inline-flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: min-content;
+  width: 100%;
 }
 .Image__Source {
-  margin-bottom: 2vh;
+  margin-bottom: 2vmax;
+  width: 100%;
 }
 .Image__Caption {
   font-style: italic;

@@ -1,33 +1,37 @@
-.Image {
-  margin: 5vh 0;
+.YinYang .Image {
+  margin: 5vmin 0;
 }
-.Image img {
+.YinYang .Image {
   width: 15vmax;
 }
 
-.TrigramCaptions {
+.YinYang .BaguaCycle .Image {
+  justify-content: flex-start;
+}
+
+.YinYang .TrigramCaptions {
   display: inline-flex;
   flex-direction: var(--tag-direction);
   flex-wrap: wrap;
   gap: 0.5vmax;
 }
-.TrigramCaptions p {
+.YinYang .TrigramCaptions p {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 10vw;
   min-width: 100px;
-  flex-grow: 0;
   font-size: clamp(0.6rem, 0.9vmax, 0.9rem);
 }
 
-.SharpAngle {
+.YinYang .SharpAngle {
   margin-bottom: 3vh;
   margin-right: 1vw;
 }
-.DullAngle {
+.YinYang .DullAngle {
   margin-top: 0;
   margin-bottom: 5vh;
 }
-.ShellSlant img {
+.YinYang .ShellSlant {
   width: 25vmax;
 }

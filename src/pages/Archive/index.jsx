@@ -1,3 +1,4 @@
+import KhanAcademy from "src/assets/khan-academy.png";
 import MotorDebate from "src/assets/motordebate/tile-2b.png";
 import Image from "src/components/Image";
 import Page from "src/components/Page";
@@ -21,7 +22,7 @@ export default function Archive() {
         <span>
           #mountain <b>☶</b>
         </span>,
-        "#react",
+        "#archived",
       ]}
       yang={
         <>
@@ -52,8 +53,8 @@ export default function Archive() {
           <p>
             A blog created from scratch with a PHP backend. This was one of my
             first projects where I felt fully in control of the design decisions
-            and had freedom to experiment and grow. I believe my taste improved
-            resultingly.
+            and had freedom to experiment and grow. Deepened my interest in the
+            arts.
           </p>
           <Image
             className="MotorDebate"
@@ -62,55 +63,34 @@ export default function Archive() {
             caption="Jumbotron Design"
           />
           <p>
-            Also featured a user account system with robust web security
-            features; Implemented using OOP concepts in PHP which was a first
-            for me (PHP was taught procedurally when I learned it). All in all,
-            very educational, especially understanding the structure of a
-            full-stack project.
+            Featured a user account system with robust web security features. A
+            very educational project for understanding the structure of a
+            full-stack project and designing with OOP principles.
           </p>
           <h3>WriterJS</h3>
           <p>
-            A custom WYSIWYG text editor JS library. This was created for
-            MotorDebate as part of my highly customized vision; I didn't want to
-            settle for the outdated looks of freely available editor libraries,
-            so I made my own.
+            A custom WYSIWYG text editor JS library created for MotorDebate as
+            part of my highly customized vision.
           </p>
           <div id="demo-1">
-            <b>DEMO</b>
+            <b>demo</b>
             <div id="demo-2"></div>
           </div>
           <p>
-            As opposed to your standard "text file" structure, WriterJS was
-            built with blocks. This allows for easy componentization of the
-            text, which is perfect for articles and blog posts.
-          </p>
-          <h3>NFT Escrow</h3>
-          <p>
-            I was hired to develop a smart contract that acts as a middleman for
-            Ethereum-based (primarily NFT) transactions. Lots of time spent here
-            researching the complex and poorly documented smart contract
-            standards. Unfortunately, a very large public marketplace site
-            released a free version which completely undermined this project,
-            which was intended to provide the escrow service for a fee.
-          </p>
-          <p>
-            Although this project was never deployed, it was great practice as I
-            was immersed in a new unfamiliar environment and also tasked to
-            learn a new language.
+            Built for block-based editing which allows for easy componentization
+            of the text: perfect for articles and blog posts.
           </p>
           <h3>Minecraft</h3>
           <p>
-            Some of my greatest logical feats were undertaken while slacking off
-            during class. Most notably, in high school, I discovered a way to
-            download Minecraft onto the school laptops, which led to a frenzy.
-            Unfortunately, we were limited to LAN servers which disallowed
-            plugins and modded gameplay.
+            In high school, I discovered a way to download Minecraft Education
+            onto the school laptops. This mode didn't allow plugins or modded
+            gameplay.
           </p>
           <p>
-            I poured much of my time into creating a skyblock server with only
-            command blocks (included in vanilla MC), which essentially required
-            very niche manipulation of JSON-adjacent data and some research into
-            the scripting language of command blocks.
+            I created a popular school-wide skyblock server with only command
+            blocks (included in vanilla MC) through very niche manipulation of
+            JSON-adjacent data and some research into the command block
+            scripting language.
           </p>
           <iframe
             className="SkyblockYouTube"
@@ -120,17 +100,32 @@ export default function Archive() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
-          <h3>KhanAcademy</h3>
-          <p>Where it all began...</p>
+          <h3>NFT Escrow</h3>
           <p>
-            See some of my first ever programming{" "}
+            A smart contract that acts as a middleman for Ethereum-based
+            (primarily NFT) transactions. Lots of time spent here researching
+            the complex and poorly documented smart contract standards.
+          </p>
+          <p>
+            Great practice as I was immersed in a new unfamiliar environment and
+            had to do a lot of self-teaching and research.
+          </p>
+          <h3>KhanAcademy</h3>
+          <Image
+            className="KhanAcademy"
+            src={KhanAcademy}
+            alt="KhanAcademy Project Grid List"
+            caption="My First Projects"
+          />
+          <p>
+            A full list of my first ever programming projects can be found{" "}
             <URL
               to="https://www.khanacademy.org/profile/BobJoe425/projects"
               newTab
             >
-              projects
-            </URL>{" "}
-            and try not to cringe.
+              here
+            </URL>
+            ...
           </p>
         </>
       }

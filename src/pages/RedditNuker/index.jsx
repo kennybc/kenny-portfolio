@@ -45,7 +45,6 @@ export default function RedditNuker() {
       }
       yin={
         <>
-          <URL to="/"> Home </URL>
           <h3 style={{ paddingTop: "0" }}>Authentication</h3>
           <p>
             User authentication is required in order to make calls to Reddit's
@@ -69,28 +68,26 @@ export default function RedditNuker() {
           <p>
             After the user logs into Reddit, opens the extension, and clicks
             delete:
-            <ol>
-              <li>
-                Nuker opens old.reddit.com in a new tab (modhash easier to
-                locate on old site architecture)
-              </li>
-              <li>
-                Nuker scrapes old.reddit.com, saves username & modhash, closes
-                tab
-              </li>
-              <li>
-                Nuker fetches list of 100 most recent posts/comments from
-                username
-              </li>
-              <li>
-                Nuker loops through list and makes requests to Reddit API to
-                delete each
-              </li>
-              <li>
-                Once all deleted, repeat from step 3. Stop if no more remain
-              </li>
-            </ol>
           </p>
+          <ol>
+            <li>
+              Nuker opens old.reddit.com in a new tab (modhash easier to locate
+              on old site architecture)
+            </li>
+            <li>
+              Nuker scrapes old.reddit.com, saves username & modhash, closes tab
+            </li>
+            <li>
+              Nuker fetches list of 100 most recent posts/comments from username
+            </li>
+            <li>
+              Nuker loops through list and makes requests to Reddit API to
+              delete each
+            </li>
+            <li>
+              Once all deleted, repeat from step 3. Stop if no more remain
+            </li>
+          </ol>
         </>
       }
     />
