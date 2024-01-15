@@ -40,9 +40,9 @@ export default function YinYang() {
             technical and creative skills.
           </p>
           <p>
-            As yang relates to the divine and yin the earthly, I decided it
-            would be fitting in the context of my projects to relate
-            imagination/philosophy to yang, and technique/material to yin.
+            As yin relates to the earthly yang the divine, I decided it would be
+            fitting in the context of my projects to relate technique/material
+            to yin and imagination/philosophy to yang.
           </p>
           <h3>Translation</h3>
           <p>

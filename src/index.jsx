@@ -28,7 +28,7 @@ function App() {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter basename="/kenny-portfolio/">
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
 );

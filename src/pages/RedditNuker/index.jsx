@@ -38,7 +38,7 @@ export default function RedditNuker() {
             >
               chrome extension
             </URL>{" "}
-            to "nuke" post or commend history, available on Google's Chrome Web
+            to "nuke" post or comment history, available on Google's Chrome Web
             Store.
           </p>
         </>
