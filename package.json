@@ -1,8 +1,9 @@
 {
-  "name": "myapp",
+  "name": "kenny-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
+  "homepage": "https://github.com/kennybc/kenny-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -14,9 +15,10 @@
     "react-router-dom": "^6.17.0"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": {
     "production": [
@@ -33,6 +35,7 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.0.3",
     "vite": "^5.0.11",
     "vite-tsconfig-paths": "^4.2.3"
