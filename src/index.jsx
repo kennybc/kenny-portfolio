@@ -10,6 +10,7 @@ import "./global.css";
 export const route2split = {
   "/": "Wind",
   "/reddit-nuker": "Earth",
+  "/ing2vec": "Thunder",
   "/yin-yang": "Lake",
   "/archive": "Mountain",
 };
@@ -19,6 +20,7 @@ function App() {
     <Wrapper>
       <Route index element={<Pages.Home />} />
       <Route path="/reddit-nuker" element={<Pages.RedditNuker />} />
+      <Route path="/ing2vec" element={<Pages.Ing2Vec />} />
       <Route path="/yin-yang" element={<Pages.YinYang />} />
       <Route path="/archive" element={<Pages.Archive />} />
     </Wrapper>

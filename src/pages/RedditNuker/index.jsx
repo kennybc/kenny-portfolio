@@ -1,8 +1,6 @@
 import Page from "src/components/Page";
 import URL from "src/components/URL";
 
-import "./styles.css";
-
 export default function RedditNuker() {
   return (
     <Page
@@ -21,8 +19,8 @@ export default function RedditNuker() {
           <p>
             Reddit doesn't allow bulk actions for posts/comments. People want to
             wipe their account and have to delete one by one, manually, or pay
-            for a service to do it automatically. It doesn't seem worth it to
-            pay to solve this kind of problem...
+            for a service to do it automatically. It didn't seem worth it to me
+            to pay to solve this kind of problem...
           </p>
           <p>
             Reddit has a free API that allows you do delete a post/comment given

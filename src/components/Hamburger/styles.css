@@ -23,7 +23,7 @@
     opacity 0.3s ease;
 }
 .Hamburger .Hamburger__Bar--Broken {
-  background: none;
+  background: none !important;
 }
 .Hamburger .Hamburger__Bar--Broken:before,
 .Hamburger .Hamburger__Bar--Broken:after {
@@ -50,9 +50,15 @@
 }
 
 .Hamburger.Hamburger--Open .Hamburger__Bar {
+  background: #b70000;
   opacity: 1;
   transform: rotate(45deg) translate(-3.5px, -2.25px);
 }
+.Hamburger.Hamburger--Open .Hamburger__Bar--Broken:before,
+.Hamburger.Hamburger--Open .Hamburger__Bar--Broken:after {
+  background: #b70000;
+}
+
 .Hamburger.Hamburger--Open .Hamburger__Bar:nth-child(2) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);

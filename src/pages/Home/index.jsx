@@ -33,7 +33,7 @@ export default function Home() {
       yin={
         <div className="Home__Links">
           <Link to="/reddit-nuker">Reddit Nuker</Link>
-          <Link to="/fusion-recipe-generator">Fusion Recipe Generator</Link>
+          <Link to="/ing2vec">Ingredient Embeddings (ing2vec)</Link>
           <Link to="/yin-yang">Yin Yang (kenny.us)</Link>
           <Link to="/archive">Archive</Link>
         </div>

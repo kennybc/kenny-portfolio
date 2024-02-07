@@ -17,8 +17,9 @@
   font-weight: 600;
   opacity: 0.7;
   transition: opacity 0.2s ease;
-  margin: 4vmin 0 4vmin 0;
+  margin: 5vmin 0;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 .Home .Yin a:hover {
   opacity: 0.9;

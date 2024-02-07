@@ -1,7 +1,7 @@
-import BaguaCycle from "src/assets/Picture1.svg";
+import BaguaCycle from "src/assets/YinYang/bagua.svg";
 import DullAngle from "src/assets/YinYang/dull.svg";
 import SharpAngle from "src/assets/YinYang/sharp.svg";
-import ShellSlant from "src/assets/shell-slant.png";
+import ShellSlant from "src/assets/YinYang/shell-slant.png";
 import Image from "src/components/Image";
 import Page from "src/components/Page";
 import URL from "src/components/URL";
@@ -153,9 +153,15 @@ export default function YinYang() {
           </p>
           <p>
             This proved to be impractical in a web rendering as it would create
-            sharp angles in which text could not be displayed, as well as a
+            sharp angles which occupied space where text could go, as well as a
             generally worse flow of content. Instead, the render is "left heavy"
-            in landscape mode while portrait mode is "top heavy."
+            in landscape mode.
+          </p>
+          <p>
+            I have elected to disable these interpretations of yin and yang when
+            viewing in portrait mode (e.g. on a mobile device) to best preserve
+            readability, so I highly recommend viewing this page on a landscape
+            oriented display.
           </p>
           <Image
             className="SharpAngle"

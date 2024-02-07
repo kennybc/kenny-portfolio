@@ -1,5 +1,5 @@
-import KhanAcademy from "src/assets/khan-academy.png";
-import MotorDebate from "src/assets/motordebate/tile-2b.png";
+import KhanAcademy from "src/assets/Archive/khanacademy.png";
+import MotorDebate from "src/assets/Archive/motordebate.png";
 import Image from "src/components/Image";
 import Page from "src/components/Page";
 import URL from "src/components/URL";
@@ -48,7 +48,6 @@ export default function Archive() {
       }
       yin={
         <>
-          <URL to="/"> Home </URL>
           <h3 style={{ paddingTop: "0" }}>MotorDebate</h3>
           <p>
             A blog created from scratch with a PHP backend. This was one of my
@@ -125,7 +124,7 @@ export default function Archive() {
             >
               here
             </URL>
-            ...
+            .
           </p>
         </>
       }
