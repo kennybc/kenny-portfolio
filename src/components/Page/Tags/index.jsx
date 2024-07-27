@@ -6,7 +6,7 @@ import "./styles.css";
 const socials = [
   {
     icon: <ImUserTie />,
-    url: "https://www.google.com/",
+    url: "resume.pdf",
     label: "View my resume",
   },
   {

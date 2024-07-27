@@ -18,7 +18,6 @@ export default function Archive() {
       className="Archive"
       title="Archive"
       tags={[
-        "#project",
         <span>
           #mountain <b>☶</b>
         </span>,

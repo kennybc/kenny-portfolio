@@ -14,7 +14,6 @@ export default function YinYang() {
       className="YinYang"
       title="Yin Yang"
       tags={[
-        "#project",
         <span>
           #lake <b>☱</b>
         </span>,
