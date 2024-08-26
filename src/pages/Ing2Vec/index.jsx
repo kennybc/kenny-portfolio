@@ -40,12 +40,17 @@ export default function Ing2Vec() {
 
           <h3>Graph Visualization</h3>
           <p></p>
-          <Image className="Fcose" src={Fcose} alt="Cytoscape fCoSE Layout" />
+          <iframe
+            className="Ing2Vec__demo"
+            src="https://kennybc.github.io/ing2vec/"
+          ></iframe>
           <p>
-            Within Cytoscape's visualization of the graph, ingredients of
-            similar nature that co-occured (intuitively) grouped together. This
-            was achieved using a force-directed layout (uniform length edges,
-            minimal crossing edges) algorithm.
+            Above is a{" "}
+            <URL to="https://kennybc.github.io/ing2vec/" newTab>
+              live interactive visualization
+            </URL>{" "}
+            of the embedded ingredients. You can zoom in and pan to explore the
+            plot: hover over a point to see the ingredient name.
           </p>
         </>
       }
@@ -81,45 +86,70 @@ export default function Ing2Vec() {
               this paper
             </URL>
             , with the Huggingface transformers library. The data wasn't the
-            most complete and the fine-tuned model posed several issues.
+            most complete and the fine-tuned model posed several issues, which
+            is why I later elected to use a larger dataset.
           </p>
           <p>
-            The labeled data contained mostly western ingredients and was not
-            labeled consistently, so I had to manually correct a number of
-            labels and insert my own examples.
-          </p>
-          <p>
-            The parser can infer the correct ingredient with a measured 91%
+            This parser can infer the correct ingredient with a measured 91%
             accuracy. Training parameters were very standard and the model was
             trained for about 16 hours.
           </p>
 
           <h3>Graph Constuction</h3>
           <p>
-            The web crawler was paused after scraping 549 recipes, for a total
-            of 961 unique ingredients. The graph was constructed using NetworkX
-            and contained 961 nodes (ingredients) and 16,620 edges
-            (co-occurences between ingredients in a recipe).
-          </p>
-          <p>
-            The weight of each edge was represented by the number of times the
-            connected ingredients co-occured, and was later changed to the PMI
-            (pointwise mutual information).
+            I initially scraped recipes from{" "}
+            <URL to="https://www.allrecipes.com/" newTab>
+              allrecipes.com
+            </URL>{" "}
+            and parsed/tokenized the recipes myself for a total of 549 recipes
+            and 961 unique ingredients. I later switched to{" "}
+            <URL to="https://huggingface.co/datasets/mbien/recipe_nlg" newTab>
+              RecipeNLG
+            </URL>
+            , a massive dataset with over 2 million recipes, of which I utilized
+            27k. I constructed a graph using NetworkX containg 7.5k nodes
+            (ingredients) and 137k edges (co-occurences between ingredients in a
+            recipe).
           </p>
           <Image className="PMI" src={PMI} />
           <p>
-            Above is the formula used to calculate PMI between ingredients{" "}
-            <i>x, y</i>, where <i>p(x)</i> is defined as the number of recipes
-            containing ingredient <i>x</i> divided by the total number of
-            recipes (and the same for ingredient <i>y</i>).
-          </p>
-          <p>
-            PMI allows normalization of weights and reduces emphasis on
-            saturated pairings; a high number of co-occurances may not always be
-            the best identifier of a close relationship.
+            The weight of each edge is represented by PMI (pointwise mutual
+            information: formula above) of the two ingredients in order to
+            normalize weights and reduce emphasis on saturated parings; a high
+            number of co-occurances may not always be the best identifier of a
+            close relationship.
           </p>
 
           <h3>Node2Vec</h3>
+          <p>
+            This project uses node2vec to embed the nodes from the graph into a
+            vector space. Node2vec works by generating "random walks" from nodes
+            in order to simulate sentences; these sentences are just random
+            sequences of adjacent ingredients. The purpose is to mimic the
+            process in which words in a sentence can be analyzed with respect to
+            adjacent words and eventually embedded in a vector.
+          </p>
+          <p>
+            Once the walks were generated and the CBOW (the adjacent word NLP
+            algorithm) model trained on the walks, I reduced the vector
+            dimensions to 2D in order for the best visual experience.
+          </p>
+
+          <h3>Usage</h3>
+          <p>
+            Functionally, a high dimension vector is the most useful, but
+            impossible to visualize. The biggest fault of this project is the
+            quality of the data; I had originally done a lot of data cleanup by
+            hand on my own scraped dataset, but it became an impossible task
+            once I switched to RecipeNLG. In an effort to combat this, I
+            filtered out any ingredient that isn't used in at least 10 recipes,
+            but there are still duplicates and other problematic data points.
+          </p>
+          <p>
+            Regardless, even the 2D representation is very interesting to
+            explore, and highlights similarities in ingredients in a statistical
+            way.
+          </p>
         </>
       }
     />

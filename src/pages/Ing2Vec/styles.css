@@ -2,3 +2,9 @@
   max-width: 300px;
   margin-top: 20px;
 }
+
+.Ing2Vec__demo {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border: none;
+}
