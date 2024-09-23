@@ -33,7 +33,13 @@ export default function RedditNuker() {
               chrome extension
             </URL>{" "}
             to "nuke" post or comment history, available on Google's Chrome Web
-            Store. The extension has over 1,000 users and is rated quite highly.
+            Store. The extension has over 2,000 users and is rated quite highly.
+          </p>
+          <p>
+            The extension has been temporarily taken offline. Due to high usage,
+            the rate limits are quickly exceeded and the extension will need to
+            be largely refactored to <i>not</i> use Reddit's official API, but
+            rather automated actions via script injections.
           </p>
         </>
       }
