@@ -3,8 +3,8 @@ import { route2split } from "src/index.jsx";
 import { getSlantDimensions, getSplitDimensions } from "src/utils/trig.js";
 import { useWindowDimensions } from "src/utils/window.js";
 
-import { createContext, useState } from "react";
-import { Routes, useLocation } from "react-router-dom";
+import { createContext, useEffect, useState } from "react";
+import { Routes, useLocation, useNavigate } from "react-router-dom";
 
 import "./styles.css";
 
@@ -28,6 +28,7 @@ function Split({ theta }) {
 
 export default function Wrapper({ children }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const [split, setSplit] = useState(route2split[location.pathname]);
   const windowDimensions = useWindowDimensions();
   const orientation =
@@ -39,6 +40,12 @@ export default function Wrapper({ children }) {
     reverse: slantDimensions.reverse,
     orientation: orientation,
   };
+
+  useEffect(() => {
+    if (!(location.pathname in route2split)) {
+      navigate("/");
+    }
+  }, [location.pathname]);
 
   return (
     <PageContext.Provider value={context}>

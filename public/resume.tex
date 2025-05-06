@@ -1,0 +1,364 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1.5 cm, % seperation between body and page edge from the top
+    bottom=1.5 cm, % seperation between body and page edge from the bottom
+    left=1.5 cm, % seperation between body and page edge from the left
+    right=1.5 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{linkColor}{RGB}{20,92,92} 
+\usepackage{enumitem} % for customizing lists
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Kenneth Chen's Resume},
+    pdfauthor={Kenneth Chen},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=linkColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0pt,
+        parsep=0pt,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0pt,
+        parsep=0pt,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{repoentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, \fill}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.25}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    HEADING
+
+
+    \begin{header}
+        \fontsize{18 pt}{18 pt}\selectfont Kenneth Chen
+
+        \vspace{2 pt}
+
+        \normalsize
+		\mbox{(452) 737-4522}
+     	~|~
+     	\mbox{kennethchen@live.com}
+		
+		\mbox{\hrefWithoutArrow{https://linkedin.com/in/kennybc}{linkedin.com/in/kennybc}}
+	        ~|~
+		\mbox{\hrefWithoutArrow{https://github.com/kennybc}{github.com/kennybc}}
+	        ~|~
+		\mbox{\hrefWithoutArrow{https://kenny.us/}{kenny.us}}
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    EDUCATION
+
+    \section{EDUCATION}
+
+
+    \begin{twocolentry}{September 2021 -- May 2025}
+        \textbf{Northeastern University}, BS in Computer Science
+	\end{twocolentry}
+
+    \vspace{0.10 cm}
+
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Honors:} Dean's Scholarship, Dean's List, GPA: 3.95/4.0
+            \item \textbf{Relevant Coursework:} Discrete Structures, Algorithms and Data Structures, Computer Systems, Database Design, Object Oriented Design, Programming in C++, Networks and Distributed Systems, Web Development, Theory of Computation, Programming Languages, Software Engineering
+        \end{highlights}
+    \end{onecolentry}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    EXPERIENCE
+
+    \section{EXPERIENCE}
+
+        
+    \begin{twocolentry}{July 2024 -- December 2024}
+        \textbf{Software Engineer @ State Street Corporation} ~|~ Boston, MA
+	\end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Designed DevOps environment under strict regulatory industry standards
+            \item Architected and engineered an internal full-stack application using Go and TypeScript
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+	\begin{twocolentry}{July 2023 -- December 2023}
+        \textbf{Software Engineer @ VUE Health} ~|~ Boston, MA
+	\end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Worked closely alongside the design/accounts teams to develop tailored marketing campaign deliverables
+            \item Designed and implemented back-end services using AWS (Datastore, S3, Beanstalk, PubSub) and Next.js
+        \end{highlights}
+    \end{onecolentry}
+
+	\vspace{0.2 cm}
+
+	\begin{twocolentry}{January 2023 -- May 2025}
+            \textbf{CS3200 Teaching Assistant @ Northeastern University} ~|~ Boston, MA
+	\end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Worked closely with faculty to prepare, review, and grade assignments and exams for CS3200 (Database Design)
+            \item Hosted office hours and assisted students with coursework involving relational algebra, RDBs, SQL, and project support involving python (Flask API), Docker, and more
+        \end{highlights}
+    \end{onecolentry}
+
+	\vspace{0.2 cm}
+
+	\begin{twocolentry}{July 2023 -- December 2023}
+            \textbf{Freelance Software Engineer} ~|~ Virtual
+	\end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Developed projects for clients through \href{https://freelancer.com}{freelancer.com} including but not limited to: scripts, browser extensions, plugins, websites, mobile apps, smart contracts
+            \item Worked extensively with advanced back-end architectures involving cybersecurity, data storage, and more
+        \end{highlights}
+    \end{onecolentry}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    PROJECTS & ACTIVITIES
+    
+    \section{PROJECTS \& ACTIVITIES}
+	
+	
+	\begin{repoentry}{\href{https://github.com/kennybc/kenny-portfolio}{github.com/kennybc/kenny-portfolio}}
+        \textbf{Personal Website} ~|~ React.js, Vite
+	\end{repoentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \href{https://kenny.us}{kenny.us} explores notable personal projects in detail and gives valuable insight into work and character
+        \end{highlights}
+    \end{onecolentry}
+    
+    \vspace{0.2 cm}
+    
+    \begin{repoentry}{\href{https://github.com/kennybc/multi-key-bindings}{github.com/kennybc/multi-key-bindings}}
+    	\textbf{Multi Key Bindings} ~|~ Java, Yarn
+    \end{repoentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+    	\begin{highlights}
+    		\item A Minecraft mod that allows players to bind a single key to multiple actions. Has a large user base, averaging 20-30 downloads per day on \href{https://modrinth.com/mod/multi-key-bindings}{modrinth.com}
+    	\end{highlights}
+    \end{onecolentry}
+	
+	\vspace{0.2 cm}
+	
+	\begin{repoentry}{\href{https://github.com/NUSpecialProjects/gitmarks}{github.com/NUSpecialProjects/gitmarks}}
+        \textbf{GitMarks} ~|~ Go, React.js, Vite, AWS, K8s, Terraform
+	\end{repoentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item A feature-rich code grading platform—extending the concept of GitHub Classroom to deliver an academia-to-industry submission model for students. Commissioned by Northeastern University
+        \end{highlights}
+    \end{onecolentry}
+    
+    \vspace{0.2 cm}
+    
+    \begin{repoentry}{\href{https://github.com/kennybc/ing2vec}{github.com/kennybc/ing2vec}}
+    	\textbf{Ing2Vec} ~|~ Python, Huggingface, NumPy
+    \end{repoentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+    	\begin{highlights}
+    		\item A project for embedding ingredients for ML training purposes. Involves scraping web recipes, parsing and tokenizing ingredients, and using node2vec algorithm to embed in a vector space
+    	\end{highlights}
+    \end{onecolentry}
+    
+    \vspace{0.2 cm}
+    
+    \begin{twocolentry}{September 2023 -- May 2025}
+    	\textbf{Cooking Club @ Northeastern University}
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+    	\begin{highlights}
+    		\item Founding president of the cooking club at Northeastern University
+    	\end{highlights}
+    \end{onecolentry}
+
+
+
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    SKILLS
+
+    \section{SKILLS}
+
+    
+    \begin{onecolentry}
+        \textbf{Programming Languages:} Java, TypeScript, PHP, Python, C, C++, Rust, Go
+    \end{onecolentry}
+
+    \begin{onecolentry}
+        \textbf{Technologies:} HTML, CSS, SQL, Git, Docker, React.js, AWS, MongoDB, Kubernetes, Terraform
+    \end{onecolentry}
+    
+    \begin{onecolentry}
+    	\textbf{Additional Languages:} Mandarin
+    \end{onecolentry}
+
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INTERESTS
+
+	\section{INTERESTS}
+	
+	
+	\begin{onecolentry}
+		Running, Lifting, Cooking, Cocktails, Chess, Painting, Volleyball, Braised Ribs
+	\end{onecolentry}
+
+
+
+
+
+\end{document}
